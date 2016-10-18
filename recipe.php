@@ -171,8 +171,8 @@ s.setAttribute('data-timestamp', +new Date());
 			</div>
 			<div class="column one-fourth">
 				<ul class="social-icons">
-					<li><a href=""><img src="assets/img/facebook.svg"></a></li>
-					<li><a href=""><img src="assets/img/instagram.svg"></a></li>
+					<li><a href="http://facebook.com/millhouse.cereals"><img src="assets/img/facebook.svg"></a></li>
+					<li><a href="http://instagram.com/millhousecereals"><img src="assets/img/instagram.svg"></a></li>
 				</ul>
 			</div>
 		</div>
