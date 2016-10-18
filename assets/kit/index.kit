@@ -1,6 +1,7 @@
 <?php
 
   include('assets/php/head.php');
+  $sql="SELECT * FROM product"; 
 
 ?>
 
