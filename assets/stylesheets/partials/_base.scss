@@ -1,0 +1,19 @@
+%font-light 	{font-weight: 100;}
+%font-regular 	{font-weight: 400;}
+%font-bold 		{font-weight: 600;}
+
+$font-heading:	"Graublau Sans Bold Italic", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-content:	"Graublau Sans Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-fixed:	"Consolas", monospace;
+
+/*
+font-family: 'Graublau Sans Bold Italic'
+font-family: 'Graublau Sans ExtraLight'
+font-family: 'Graublau Sans SemiBold'
+font-family: 'Graublau Sans Regular'
+*/
+
+$breakpoint:	102.4rem;
+$breakpoint-sm:	80rem;
+
+@import "../modules/all";

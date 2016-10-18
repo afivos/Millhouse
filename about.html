@@ -1,0 +1,183 @@
+<?php
+
+  include('connection.php');
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Millouse Cereals</title>
+    <meta name="description" content="">
+
+    <!-- Graublau Sans Pro font, 30-day trial -->
+    <script type="text/javascript">
+        (function() {
+            var path = '//easy.myfonts.net/v2/js?sid=156059(font-family=Graublau+Sans+Bold+Italic)&sid=156063(font-family=Graublau+Sans+ExtraLight)&sid=156067(font-family=Graublau+Sans+SemiBold)&sid=156068(font-family=Graublau+Sans+Regular)&key=tLA3eVkqpD',
+                protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+                trial = document.createElement('script');
+            trial.type = 'text/javascript';
+            trial.async = true;
+            trial.src = protocol + path;
+            var head = document.getElementsByTagName("head")[0];
+            head.appendChild(trial);
+        })();
+    </script>
+
+    <!-- Fonts, then styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="assets/js/min/scripts-min.js"></script>
+    <script src="assets/js/modernizr.custom.js"></script>
+</head>
+<body>
+<div class="section__page section__page--about">
+	<div class="container">
+
+		<div class="navbar">
+    <a href="/"><img class="logo" src="assets/img/logo.svg"></a>
+    <div class="navIcon visible-sm">
+        <div class="naviconUpper"></div>
+        <div class="innerNavicon"></div>
+        <div class="naviconLower"></div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/#products">Προϊόντα</a></li>
+            <li><a href="recipes.php">Συνταγές</a></li>
+            <li><a href="about.html">Σχετικά με εμάς</a></li>
+            <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+    </nav>
+</div><video poster="assets/img/screenshot2.jpg" id="bgvid" playsinline autoplay muted loop>
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+<source src="assets/img/video.webm" type="video/webm">
+<source src="assets/img/video.mp4" type="video/mp4">
+</video>
+		<h1 class="text-center">"Ποιότητα: ο πιο σημαντικός παράγοντας για τη διάθεση κάθε νέου Millhouse προϊόντος στην ελληνική αγορά."</h1>
+	    <div id="arrow-down">
+	      <a href="#section--1" class="button-down"></a>
+	    </div>
+		
+	</div>
+</div>
+
+<script>
+var vid = document.getElementById("bgvid");
+
+function vidFade() {
+  vid.classList.add("stopfade");
+}
+
+vid.addEventListener('ended', function()
+{
+// only functional if "loop" is removed 
+vid.pause();
+// to capture IE10
+vidFade();
+}); 
+
+
+pauseButton.addEventListener("click", function() {
+  vid.classList.toggle("stopfade");
+  if (vid.paused) {
+    vid.play();
+    pauseButton.innerHTML = "Pause";
+  } else {
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+  }
+})
+</script>
+
+<section class="section--colored text-left" id="section--1" style="background: rgba(0,120,80,0.8)">
+	<div class="container">
+		<h1>Σχετικά με εμάς</h1>
+		<p>Τα προϊόντα Millhouse αποτελούν ένα από τα κατοχυρωμένα brands της εταιρείας <a href="http://introfex.gr">INTROFEX Ε.Π.Ε</a>, η οποία θεωρείται σήμερα μια από τις μεγαλύτερες εταιρίες συσκευασίας τροφίμων στην Ελλάδα.</p>
+		<p>Το brand Millhouse είναι άρρηκτα συνδεδεμένο με την πορεία και την εξέλιξη της <a href="http://introfex.gr">INTROFEX Ε.Π.Ε.</a> Ξεκίνησε το 1996 με τη δραστηριοποίηση της εταιρείας στον χώρο των δημητριακών πρωινού και σήμερα, ακολουθώντας πιστά τη φιλοσοφία της σχέσης εξαιρετικής ποιότητας και καλής τιμής, στόχος είναι η καθιέρωση των προϊόντων Millhouse ως η πλέον αναγνωρίσιμη ελληνική μάρκα δημητριακών.</p>
+		<p>Τα προίόντα Millhouse διατίθενται στις παρακάτω επιλεγμένες αλυσίδες καταστημάτων.</p>
+	</div>
+</section>
+
+<section class="section--white clients">
+	<div class="container-sm">
+		<h1>Πού θα βρείτε τα προϊόντα Millhouse</h1>
+		<hr>
+		<div class="row">
+			<div class="column half">
+				<img src="assets/img/sklavenitis.png">
+			</div>
+			<div class="column half">
+				<img src="assets/img/masoutis.png">
+			</div>
+			<div class="column one-third">
+				<img src="assets/img/xalkiadakis.png">
+			</div>
+			<div class="column one-third">
+				<img src="assets/img/galaxias.png">
+			</div>
+			<div class="column one-third">
+				<img src="assets/img/kronos.png">
+			</div>
+		</div>
+	</div>	
+</section>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="column one-fourth">
+				<a href="/"><img src="assets/img/logo_bw.svg" class="logo"></a>
+			</div>
+			<div class="column one-fourth">
+				<ul>
+					<li><a href="/#products--1">Προϊόντα</a></li>
+					<li><a href="recipes.php">Συνταγές</a></li>
+				</ul>
+			</div>
+			<div class="column one-fourth">
+				<ul>
+					<li><a href="about.html">Σχετκά με εμάς</a></li>
+					<li><a href="contact.html">Επικοινωνία</a></li>
+				</ul>
+			</div>
+			<div class="column one-fourth">
+				<ul class="social-icons">
+					<li><a href=""><img src="assets/img/facebook.svg"></a></li>
+					<li><a href=""><img src="assets/img/instagram.svg"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<section class="asdf" style="background: #383838; color: white; margin: 0;">
+	<div class="container">
+		<p class="text-center">Copyright &copy; <script>new Date().getFullYear()>2014&&document.write(""+new Date().getFullYear());</script> <a href="http://introfex.gr">Introfex LTD</a>. All rights reserved. Handmade with <span style="color:#f24242;">♥</span> by <a href="http://afivos.com">Fivos Avgerinos</a>.</p>
+	</div>
+</section>
+
+<script src="assets/js/classie.js"></script>
+<script src="assets/js/demo1.js"></script>
+
+<script>
+$(".navIcon").click(function() {
+  $(".naviconUpper").toggleClass("on");
+  $(".innerNavicon").toggleClass("on");
+  $(".naviconLower").toggleClass("on");
+  $("body").toggleClass("on");
+  $("h1").toggleClass("on");
+  $(".navIcon").toggleClass("on");
+  $(".section__page").toggleClass("on");
+});
+</script>
+
+</body>
+</html>

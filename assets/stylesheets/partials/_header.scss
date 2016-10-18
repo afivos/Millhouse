@@ -1,0 +1,374 @@
+.section__page {
+  .navbar {
+    text-align: left;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $breakpoint) {
+    .logo {
+      margin-top: 4rem;
+    }
+
+    p { max-width: 55%; }
+
+    ul {
+      height: 100%;
+      float: right;
+      margin-top: -6rem;
+
+      li {
+        display: inline-block;
+        margin-left: 4rem;
+        height: 20%;
+        height: calc(100% / 5);
+        min-height: 5.4rem;
+
+        a {
+          font-weight: 300;
+          display: block;
+          color: inherit;
+          text-decoration: none;
+          -webkit-transition: color 0.2s;
+          transition: color 0.2s;
+
+          &:hover,
+          &:active {
+            color: $color-link;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint) {
+    .logo {
+      margin-top: 5%;
+    }
+
+    ul {
+      max-height: 0;
+      transition: max-height 0.3s ease-out;
+      overflow: hidden;
+      opacity: 0;
+    }
+  }
+}
+
+.section__page.on {
+  ul {
+    max-height: 18rem;
+    transition: max-height 0.3s ease-in;
+    text-align: center;
+    opacity: 1;
+
+    li {
+      @media (max-width: $breakpoint) {
+        margin: 1.5rem auto;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover,
+        &:active {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}
+
+nav {
+  margin-bottom: 7rem;
+
+  @media (max-width: $breakpoint) {
+    margin-bottom: 4rem;
+  }
+}
+
+.navIcon > * {
+  width: 30px;
+}
+
+.navIcon {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  float: right;
+  margin-top: 10%;
+
+  &:hover {
+    //color: $color-primary;
+  }
+
+  .naviconUpper {
+    border-top: 3px solid $color-main-text;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .innerNavicon {
+    margin-top: 5px;
+    border-top: 3px solid $color-main-text;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .naviconLower {
+    border-bottom: 3px solid $color-main-text;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 5px;
+  }
+
+  .naviconUpper.on {
+    transform:
+      rotate(360deg);
+    border-top: 3px solid $color-main-text;
+    
+    opacity: 0;
+  }
+
+  .innerNavicon.on {
+    transform: rotate(45deg);
+    border-top: 3px solid $color-main-text;
+  }
+
+  .naviconLower.on {
+    transform: translateY(-8px) rotate(-45deg);
+    border-bottom: 3px solid $color-main-text;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section__page--index {
+  background:
+    linear-gradient(to bottom, rgba(255,255,255,0.65)
+      0%,rgba(255,255,255,0) 20%,rgba(255,255,255,0) 100%)
+      no-repeat center center,
+      url(../img/girl.jpg) no-repeat center center;
+  filter:
+    progid:DXImageTransform.Microsoft.gradient(
+      startColorstr='#a6000000',
+      endColorstr='#00000000',
+      GradientType=0
+    );
+  background-size: cover;
+  background-size: fixed;
+  background-attachment: fixed;
+  padding: 0 0 25% 0;
+
+  h1 {
+    color: $color-primary;
+    max-width: 50rem;
+    margin-bottom: 7rem;
+  }
+}
+
+.section__page--product {
+  background: url(../img/grass.jpg) no-repeat center center;
+  background-size: cover;
+  background-size: fixed;
+  padding: 0 0 40rem 0;
+  position: relative;
+  text-align: center;
+
+  h1 {
+    color: $color-primary;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $breakpoint) {
+    + section {
+        padding-top: 20rem;
+    }
+
+    .product__image {
+      margin: 7rem auto;
+      left: 0;
+      right: 0;
+      max-height: 55rem;
+      position: absolute;
+    }
+  }
+
+  @media (max-width: $breakpoint) {
+    padding-bottom: 5%;
+
+    .product__image {
+      max-height: 40rem;
+      margin-bottom: 0;
+      margin-top: 5%;
+    }
+  }
+}
+
+.section__page--recipes {
+  background: url(../img/recipes.jpg) no-repeat center center;
+  background-size: cover;
+  background-size: fixed;
+  padding: 0 0 80rem 0;
+  position: relative;
+  text-align: center;
+
+  h1 {
+    color: $color-primary;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $breakpoint) {
+    padding-bottom: 20%;
+    background-image: url(../img/recipes-sm.jpg);
+  }
+}
+
+.section__page--recipe {
+  padding: 0 0 7rem 0;
+  position: relative;
+  text-align: center;
+
+  h1 {
+    color: $color-primary;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $breakpoint) {
+    + section {
+        padding-top: 20rem;
+    }
+  }
+}
+
+.section__page--recipes,
+.section__page--recipe {
+  ul {
+    @media (min-width: $breakpoint) {
+      margin-top: -10.2rem;      
+    }
+  }
+
+  nav {
+    margin-bottom: 4rem;
+
+    @media (max-width: $breakpoint) {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.section__page--about {
+  color: $color-white;
+  padding: 0 0 50rem 0;
+
+  h1 {
+    max-width: $breakpoint-sm;
+    margin: 10% auto 0;
+  }
+  video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      transform: translateX(-50%) translateY(-50%);
+   background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+  }
+  .stopfade { 
+     opacity: .5;
+  }
+
+  #polina { 
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight:100; 
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 2rem;
+    width: 33%;
+    margin:2rem;
+    float: right;
+    font-size: 1.2rem;
+  }
+  #polina button { 
+    display: block;
+    width: 80%;
+    padding: .4rem;
+    border: none; 
+    margin: 1rem auto; 
+    font-size: 1.3rem;
+    background: rgba(255,255,255,0.23);
+    color: #fff;
+    border-radius: 3px; 
+    cursor: pointer;
+    transition: .3s background;
+  }
+  #polina button:hover { 
+     background: rgba(0,0,0,0.5);
+  }
+  @media screen and (max-width: 500px) { 
+    div{width:70%;} 
+  }
+  @media screen and (max-device-width: 800px) {
+    html { background: url(//demosthenes.info/assets/images/polina.jpg) #000 no-repeat center center fixed; }
+    #bgvid { display: none; }
+  }
+}
+
+
+
+
+
+
+
+
+
+  #arrow-down {
+    width: 5rem;
+    height: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+
+    .button-down {
+      width: 5rem;
+      height: 5rem;
+      background-image: url('../img/arrow.png');
+      background-repeat: no-repeat;
+      display: block;
+      @extend %transition-4;
+
+      &:hover {
+        transform:translateY(1rem);
+      }
+    }
+  }

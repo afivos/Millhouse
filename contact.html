@@ -1,0 +1,124 @@
+<?php
+
+  include('connection.php');
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Millouse Cereals</title>
+    <meta name="description" content="">
+
+    <!-- Graublau Sans Pro font, 30-day trial -->
+    <script type="text/javascript">
+        (function() {
+            var path = '//easy.myfonts.net/v2/js?sid=156059(font-family=Graublau+Sans+Bold+Italic)&sid=156063(font-family=Graublau+Sans+ExtraLight)&sid=156067(font-family=Graublau+Sans+SemiBold)&sid=156068(font-family=Graublau+Sans+Regular)&key=tLA3eVkqpD',
+                protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+                trial = document.createElement('script');
+            trial.type = 'text/javascript';
+            trial.async = true;
+            trial.src = protocol + path;
+            var head = document.getElementsByTagName("head")[0];
+            head.appendChild(trial);
+        })();
+    </script>
+
+    <!-- Fonts, then styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="assets/js/min/scripts-min.js"></script>
+    <script src="assets/js/modernizr.custom.js"></script>
+</head>
+<body>
+<div class="section__page section__page--contact">
+	<div class="container">
+
+		<div class="navbar">
+    <a href="/"><img class="logo" src="assets/img/logo.svg"></a>
+    <div class="navIcon visible-sm">
+        <div class="naviconUpper"></div>
+        <div class="innerNavicon"></div>
+        <div class="naviconLower"></div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/#products">Προϊόντα</a></li>
+            <li><a href="recipes.php">Συνταγές</a></li>
+            <li><a href="about.html">Σχετικά με εμάς</a></li>
+            <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+    </nav>
+</div>		
+	</div>
+</div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25164.72473374678!2d23.66815813966106!3d37.963344409059836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bc89f7668983%3A0x561a9a7d90fde1b!2sIntrofex+Ltd.!5e0!3m2!1sen!2sgr!4v1476710336860" width="2000" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<section class="section--white text-left">
+	<div class="container">
+		<h1>Επικοινωνία</h1>
+		<p>Για οποιαδήποτε ερώτηση, πληροφορία ή παρατήρηση, παρακαλούμε συμπληρώστε τη φόρμα. Θα επικοινωνήσουμε μαζί σας το συντομότερο δυνατό.</p>
+		<p>Εναλλακτικά, μπορείτε να μας καλέσετε στο 210 4836352 ή να μας στείλετε email στο info@introfex.gr.</p>
+		<p>Είμαστε στη διάθεσή σας Δευτέρα με Παρασκευή, από τις 08:00 έως τις 16:00. Βρισκόμαστε στην οδό Θέμιδος 15, Αγ. Ιωάννης Ρέντης 182 33.</p>
+	</div>
+</section>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="column one-fourth">
+				<a href="/"><img src="assets/img/logo_bw.svg" class="logo"></a>
+			</div>
+			<div class="column one-fourth">
+				<ul>
+					<li><a href="/#products--1">Προϊόντα</a></li>
+					<li><a href="recipes.php">Συνταγές</a></li>
+				</ul>
+			</div>
+			<div class="column one-fourth">
+				<ul>
+					<li><a href="about.html">Σχετκά με εμάς</a></li>
+					<li><a href="contact.html">Επικοινωνία</a></li>
+				</ul>
+			</div>
+			<div class="column one-fourth">
+				<ul class="social-icons">
+					<li><a href=""><img src="assets/img/facebook.svg"></a></li>
+					<li><a href=""><img src="assets/img/instagram.svg"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<section class="asdf" style="background: #383838; color: white; margin: 0;">
+	<div class="container">
+		<p class="text-center">Copyright &copy; <script>new Date().getFullYear()>2014&&document.write(""+new Date().getFullYear());</script> <a href="http://introfex.gr">Introfex LTD</a>. All rights reserved. Handmade with <span style="color:#f24242;">♥</span> by <a href="http://afivos.com">Fivos Avgerinos</a>.</p>
+	</div>
+</section>
+
+<script src="assets/js/classie.js"></script>
+<script src="assets/js/demo1.js"></script>
+
+<script>
+$(".navIcon").click(function() {
+  $(".naviconUpper").toggleClass("on");
+  $(".innerNavicon").toggleClass("on");
+  $(".naviconLower").toggleClass("on");
+  $("body").toggleClass("on");
+  $("h1").toggleClass("on");
+  $(".navIcon").toggleClass("on");
+  $(".section__page").toggleClass("on");
+});
+</script>
+
+</body>
+</html>

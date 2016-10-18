@@ -1,0 +1,394 @@
+html { font-size: 62.5%; }
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: $font-content;
+	color: $color-main-text;
+  line-height: 1.5;
+  letter-spacing: 0.05rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $font-heading;
+  line-height: 1.25;
+	@extend %font-regular;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: $breakpoint;
+
+  @media (max-width: $breakpoint) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.container-sm {
+  margin: 0 auto;
+  max-width: $breakpoint-sm;
+}
+
+a {
+	color: $color-link;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+  	text-decoration: underline;
+  }
+}
+
+p { margin-bottom: 3rem; }
+
+img {	max-width: 100%; }
+
+hr {
+  border: 0;
+  margin: 6rem auto;
+  height: 1px;
+  max-width: 65rem;
+  background-image: linear-gradient(to right, $color-grey-light, $color-grey, $color-grey-light);
+}
+
+// Font sizes
+
+body, h4 { font-size: 2rem; }
+h1 { font-size: 3.6rem; }
+h2 { font-size: 3rem; }
+h3 { font-size: 2.6rem; }
+
+@media (max-width: $breakpoint) {
+  body, h4 {}
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2.4rem; }
+  h3 { font-size: 2.2rem; }
+}
+
+// Helpful classes
+
+.hidden-sm {
+	@media (max-width: $breakpoint) {
+		display: none;
+	}
+}
+
+.visible-sm {
+	@media (min-width: $breakpoint) {
+		display: none;
+	}
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.icon {
+  margin-bottom: 2rem;
+  margin-top: 0;
+
+  + * {
+    margin-top: 0;
+  }
+}
+
+.icon--fixed {
+  position: absolute;
+  margin-top: -10rem;
+
+  @media (max-width: $breakpoint) {
+    display: none;
+    max-width: 10rem;
+  }
+}
+
+.icon--fixed__right {
+  right: 0;
+}
+
+.icon--fixed__left {
+  left: 0;
+}
+
+// Button Global
+
+.btn {
+	display: inline-block;
+	padding: 1.6rem 2.6rem;
+	border: 0.2rem solid;
+	border-radius: 0.8rem;
+	@extend %transition-2;
+	text-decoration: none;
+	cursor: pointer;
+
+  &:after,
+  &:before {
+    @extend %transition-2;
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+
+  @media (min-width: $breakpoint) {
+    &:after,
+    &:before {
+      display: inline-block;
+      font-size: 3.25rem;
+      position: absolute;
+      content: '›';
+      opacity: 0;
+      margin-top: -0.9rem;
+      margin-left: -0.15rem;
+    }
+
+    &:hover {
+      padding-right: 4.3rem;
+
+      &:after {
+        opacity: 1;
+        padding-left: 1.25rem;
+      }
+    }
+  }
+}
+
+// Button Variables
+
+.btn--filled {
+	@include btn-filled($color-primary);
+}
+
+.btn--outlined {
+	@include btn-outlined($color-primary);
+}
+
+.btn--outlined--white {
+	@include btn-outlined($color-white);
+}
+
+// Product page
+
+.circle {
+	background: $color-primary;
+	color: $color-white;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	line-height: 10rem;
+	text-align: center;
+	font-size: 2.2rem;
+	display: inline-block;
+  font-family: $font-fixed;
+  @extend %font-light;
+}
+
+.product__stats {
+  .row .columns,
+  .row .columns:first-of-type {
+    padding: 1rem !important;
+    padding-right: 1rem;
+  }
+
+  @media (max-width: $breakpoint) {
+    h4 { font-size: 75%; }
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
+// Recipe page
+
+.image--recipe {
+  width: 100%;
+}
+
+.section--recipe {
+  .row:first-of-type {
+    .column {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  }
+
+  .product--used {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 22.5rem;
+    margin-top: 8.5rem;
+  }
+
+  hr.hr--recipe {
+    background-image: none;
+    background-color: $color-grey;
+    margin: 18.7rem auto 19.6rem;
+    text-align: center;
+
+    &:after {
+      content: '.';
+      display: inline-block;
+      position: relative;
+      top: -1.5rem;
+      padding: 0 11.5rem;
+      background: $color-white;
+      color: transparent;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row .column,
+.row .columns,
+.row .column:first-of-type,
+.row .columns:first-of-type {
+  padding: 3rem !important;
+
+  @media (max-width: $breakpoint) {
+    padding: 2% !important;
+  }
+}
+
+.row,
+.row:first-of-type,
+.row:first-of-type {
+  //margin-top: 7rem;
+}
+
+
+
+
+#disqus_thread {
+  margin-top: 7rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+
+
+
+
+
+.tiles {
+  
+  .tile {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0.1rem;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 2rem 0 rgba($color-primary,.05);
+    
+    &:before {
+      content: '';
+      background: linear-gradient(
+        to top,
+        rgba($color-primary,0.5) 0%,
+        rgba($color-primary,1) 100%
+      );
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      z-index: 2;
+      transition-property: top, opacity;
+      @extend %transition-3;
+    }
+    
+    img {
+      display: block;
+      max-width: 100%;
+      backface-visibility: hidden;
+    }
+    
+    .details {
+      padding: 4rem;
+      //max-width: 99%;
+      color: $color-white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      
+      * {
+        text-decoration: none;
+        display: block;
+        opacity: 0;
+        position: relative;
+        color: $color-white;
+        margin-top: 0;
+        bottom: 10rem;
+        transition-property: bottom, opacity;
+        @extend %transition-3;
+        transition-delay: 0s;
+      }
+
+      @media (max-width: $breakpoint) {
+        padding: 2rem;
+
+        p { display: none; }
+      }
+    }
+    
+    &:focus,
+    &:hover {
+      
+      &:before,
+      * {
+        opacity: 1;
+      }
+      
+      &:before {
+        bottom: 0;
+        top: 0;
+      }
+      
+      * {
+        bottom: 0;
+      }
+      
+      h2 {
+        transition-delay: 0.15s;
+      }
+      
+      p {
+        transition-delay: 0.3s;
+      }
+    }
+  }
+}
