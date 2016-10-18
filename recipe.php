@@ -36,9 +36,9 @@
 
 <img src="assets/img/cookies.jpg" class="image--recipe">
 
-<section class="section--white section--recipe">
+<section class="section--recipe section--white">
 	<div class="container">
-		<div class="row">
+		<div class="row text-center">
 			<div class="column one-third">
 				<img src="assets/img/clock.png" class="icon">
 				<h4>Χρόνος εκτέλεσης</h4>
@@ -60,7 +60,7 @@
 
 		<hr class="hr--recipe">
 
-		<div class="row text-left">
+		<div class="row">
 			<div class="column two-fifths">
 				<h2>Συστατικά</h2>
 				<ul>
@@ -111,7 +111,7 @@ s.setAttribute('data-timestamp', +new Date());
 	</div>
 </section>
 
-<section class="section--subtle section--recipes">
+<section class="section--recipes section--subtle">
 	<div class="container">
 		<img src="assets/img/spoon-fork.png" class="icon">
 		<h1>Άλλες συνταγές</h1>
@@ -151,7 +151,7 @@ s.setAttribute('data-timestamp', +new Date());
 
 ?>
 
-<footer>
+<footer class="footer--one">
 	<div class="container">
 		<div class="row">
 			<div class="column one-fourth">
@@ -179,11 +179,11 @@ s.setAttribute('data-timestamp', +new Date());
 	</div>
 </footer>
 
-<section class="asdf" style="background: #383838; color: white; margin: 0;">
+<footer class="footer--two" style="background: #383838; color: white; margin: 0;">
 	<div class="container">
 		<p class="text-center">Copyright &copy; <script>new Date().getFullYear()>2014&&document.write(""+new Date().getFullYear());</script> <a href="http://introfex.gr">Introfex LTD</a>. All rights reserved. Handmade with <span style="color:#f24242;">♥</span> by <a href="http://afivos.com">Fivos Avgerinos</a>.</p>
 	</div>
-</section>
+</footer>
 
 <script src="assets/js/classie.js"></script>
 <script src="assets/js/demo1.js"></script>

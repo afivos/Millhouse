@@ -1,7 +1,6 @@
 // Section Global
 
 section {
-	text-align: center;
 	padding: 10rem 0 12.5rem;
 
 	p.description {
@@ -154,5 +153,16 @@ section {
 
 	a {
 		color: $color-link;
+	}
+}
+
+.section--products,
+.section--recipes {
+	text-align: center;
+}
+
+.section--products.section--white {
+	a {
+		color: inherit;
 	}
 }

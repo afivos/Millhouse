@@ -28,7 +28,7 @@
 	</div>
 </div>
 
-<section class="section--colored" id="products">
+<section class="section--products section--colored" id="products">
 	<div class="container">
 		<h1>Οικογένεια Crunchy Oat</h1>
 		<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nostrum blanditiis velit, quia repellat minima amet, libero.</p>
@@ -46,7 +46,7 @@
 	</div>
 </section>
 
-<section class="section--white">
+<section class="section--products section--white">
 	<div class="container">
 		<h1>Βρώμη</h1>
 		<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nostrum blanditiis velit, quia repellat minima amet, libero.</p>
@@ -64,7 +64,7 @@
 	</div>
 </section>
 
-<section class="section--photo">
+<section class="section--products section--photo">
 	<div class="container">
 		<h1>Light &amp; Diet</h1>
 		<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nostrum blanditiis velit, quia repellat minima amet, libero.</p>
@@ -88,7 +88,7 @@
 	</div>
 </section>
 
-<section class="section--colored">
+<section class="section--products section--colored">
 	<div class="container">
 		<h1>Διάφορα προϊόντα</h1>
 		<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nostrum blanditiis velit, quia repellat minima amet, libero.</p>
@@ -106,7 +106,7 @@
 	</div>
 </section>
 
-<section class="section--white">
+<section class="section--products section--white">
 	<div class="container">
 		<h1>Μπάρες</h1>
 		<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nostrum blanditiis velit, quia repellat minima amet, libero.</p>
@@ -124,7 +124,7 @@
 	</div>
 </section>
 
-<footer>
+<footer class="footer--one">
 	<div class="container">
 		<div class="row">
 			<div class="column one-fourth">
@@ -152,11 +152,11 @@
 	</div>
 </footer>
 
-<section class="asdf" style="background: #383838; color: white; margin: 0;">
+<footer class="footer--two" style="background: #383838; color: white; margin: 0;">
 	<div class="container">
 		<p class="text-center">Copyright &copy; <script>new Date().getFullYear()>2014&&document.write(""+new Date().getFullYear());</script> <a href="http://introfex.gr">Introfex LTD</a>. All rights reserved. Handmade with <span style="color:#f24242;">♥</span> by <a href="http://afivos.com">Fivos Avgerinos</a>.</p>
 	</div>
-</section>
+</footer>
 
 <script src="assets/js/classie.js"></script>
 <script src="assets/js/demo1.js"></script>

@@ -31,7 +31,7 @@
 	</div>
 </div>
 
-<section class="section--white section--recipes" id="recipes">
+<section class="section--recipes section--white" id="recipes">
 	<div class="container">
 		<img src="assets/img/mixer.png" class="icon">
 		<h1>Γλυκές συνταγές</h1>
@@ -86,7 +86,7 @@
 	</div>
 </section>
 
-<section class="section--subtle section--recipes section--angled">
+<section class="section--recipes section--subtle section--angled">
 	<img src="assets/img/berries.png" class="icon--fixed icon--fixed__left">
 	<div class="container">
 		<img src="assets/img/blender.png" class="icon">
@@ -142,7 +142,7 @@
 	</div>
 </section>
 
-<section class="section--white section--recipes">
+<section class="section--recipes section--white">
 	<div class="container">
 		<img src="assets/img/salt-pepper.png" class="icon">
 		<h1>Αλμυρές συνταγές</h1>
@@ -175,7 +175,7 @@
 	</div>
 </section>
 
-<footer>
+<footer class="footer--one">
 	<div class="container">
 		<div class="row">
 			<div class="column one-fourth">
@@ -203,11 +203,11 @@
 	</div>
 </footer>
 
-<section class="asdf" style="background: #383838; color: white; margin: 0;">
+<footer class="footer--two" style="background: #383838; color: white; margin: 0;">
 	<div class="container">
 		<p class="text-center">Copyright &copy; <script>new Date().getFullYear()>2014&&document.write(""+new Date().getFullYear());</script> <a href="http://introfex.gr">Introfex LTD</a>. All rights reserved. Handmade with <span style="color:#f24242;">♥</span> by <a href="http://afivos.com">Fivos Avgerinos</a>.</p>
 	</div>
-</section>
+</footer>
 
 <script src="assets/js/classie.js"></script>
 <script src="assets/js/demo1.js"></script>

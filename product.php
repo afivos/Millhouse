@@ -60,7 +60,7 @@
 	</div>	
 </section>
 
-<section class="section--colored">
+<section class="section--colored text-center">
 	<div class="container">
 		<img src="assets/img/leaf.svg" class="icon">
 		<h1>Healthy Tip</h1>
@@ -68,7 +68,7 @@
 	</div>
 </section>
 
-<section class="section--white">
+<section class="section--products section--white">
 	<div class="container">
 		<h1>Άλλα προϊόντα</h1>
 		<div class="row">
@@ -86,7 +86,7 @@
 	</div>
 </section>
 
-<section class="section--subtle section--recipes">
+<section class="section--recipes section--subtle">
 	<div class="container">
 		<img src="assets/img/forkspoon.svg">
 		<h1>Συνταγές με Chocolate Pops</h1>
@@ -117,7 +117,7 @@
 		<a href="recipes.php" class="btn btn--outlined">Όλες οι συνταγές</a>
 	</div>
 </section>
-<footer>
+<footer class="footer--one">
 	<div class="container">
 		<div class="row">
 			<div class="column one-fourth">
@@ -145,11 +145,11 @@
 	</div>
 </footer>
 
-<section class="asdf" style="background: #383838; color: white; margin: 0;">
+<footer class="footer--two" style="background: #383838; color: white; margin: 0;">
 	<div class="container">
 		<p class="text-center">Copyright &copy; <script>new Date().getFullYear()>2014&&document.write(""+new Date().getFullYear());</script> <a href="http://introfex.gr">Introfex LTD</a>. All rights reserved. Handmade with <span style="color:#f24242;">♥</span> by <a href="http://afivos.com">Fivos Avgerinos</a>.</p>
 	</div>
-</section>
+</footer>
 
 <script src="assets/js/classie.js"></script>
 <script src="assets/js/demo1.js"></script>
