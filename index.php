@@ -34,15 +34,27 @@
 		<h1>Οικογένεια Crunchy Oat</h1>
 		<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nostrum blanditiis velit, quia repellat minima amet, libero.</p>
 		<div class="row">
+
+		<!--  result fetch from product category "crunchy"-->
+
+			<?php
+				if ($result = $connection->query($sql)) {
+					$line = $result->fetch_assoc();
+						do {
+							if ($line['category'] == "crunchy") {
+								?>
+
 			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/crunchyOat.png" class="img--box__short"><p>Crunchy Oat</p></a>
+				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image'];?>" class="img--box__short"><p><?php echo $line['name'];?></p></a>
 			</div>
-			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/crunchyOatChoco.png" class="img--box__short"><p>Crunchy Oat Chocolate</p></a>
-			</div>
-			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/crunchyOatSuper.png" class="img--box__short"><p>Crunchy Oat Super Fruits</p></a>
-			</div>
+
+			<?php
+							}
+						} while ($line = $result->fetch_assoc());
+					$result->close();
+				}
+			?>
+		
 		</div>
 	</div>
 </section>
@@ -52,15 +64,27 @@
 		<h1>Βρώμη</h1>
 		<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nostrum blanditiis velit, quia repellat minima amet, libero.</p>
 		<div class="row">
+
+		<!-- result fetch from product category "oat" -->
+
+			<?php
+				if ($result = $connection->query($sql)) {
+					$line = $result->fetch_assoc();
+						do {
+							if ($line['category'] == "oat") {
+								?>
+
 			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/oatSuper.png" class="img--bag"><p>Oat Super Fruits</p></a>
+				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
 			</div>
-			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/oatBio.png" class="img--bag"><p>Oat Bio</p></a>
-			</div>
-			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/oat.png" class="img--bag"><p>Oat</p></a>
-			</div>
+
+			<?php
+							}
+						} while ($line = $result->fetch_assoc());
+					$result->close();
+				}
+			?>
+
 		</div>
 	</div>
 </section>
@@ -70,21 +94,27 @@
 		<h1>Light &amp; Diet</h1>
 		<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nostrum blanditiis velit, quia repellat minima amet, libero.</p>
 		<div class="row">
+
+		<!-- result fetch from product category "light&diet" -->
+
+			<?php
+				if ($result = $connection->query($sql)) {
+					$line = $result->fetch_assoc();
+						do {
+							if ($line['category'] == "diet") {
+								?>
+
 			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/dietDark.png" class="img--box__tall"><p>Light &amp; Diet Dark Chocolate</p></a>
+				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--box__tall"><p><?php echo $line['name']?></p></a>
 			</div>
-			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/dietFruits.png" class="img--box__tall"><p>Light &amp; Diet Exotic Fruits</p></a>
-			</div>
-			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/dietChoco.png" class="img--box__tall"><p>Light &amp; Diet Chocolate</p></a>
-			</div>
-			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/dietStrawberry.png" class="img--box__tall"><p>Light &amp; Diet Pathos</p></a>
-			</div>
-			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/diet.png" class="img--box__tall"><p>Light &amp; Diet </p></a>
-			</div>
+
+			<?php
+							}
+						} while ($line = $result->fetch_assoc());
+					$result->close();
+				}
+			?>
+
 		</div>
 	</div>
 </section>
@@ -94,15 +124,26 @@
 		<h1>Διάφορα προϊόντα</h1>
 		<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nostrum blanditiis velit, quia repellat minima amet, libero.</p>
 		<div class="row">
+
+		<!-- result fetch from product category "other" -->
+
+			<?php
+				if ($result = $connection->query($sql)) {
+					$line = $result->fetch_assoc();
+						do {
+							if ($line['category'] == "other") {
+								?>
 			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/cornFlakes.png" class="img--bag"><p>Corn Flakes</p></a>
+				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
 			</div>
-			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/cornFlakes.png" class="img--bag"><p>Corn Flakes</p></a>
-			</div>
-			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/cornFlakes.png" class="img--bag"><p>Corn Flakes</p></a>
-			</div>
+
+			<?php
+							}
+						} while ($line = $result->fetch_assoc());
+					$result->close();
+				}
+			?>
+
 		</div>
 	</div>
 </section>
@@ -112,15 +153,26 @@
 		<h1>Μπάρες</h1>
 		<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nostrum blanditiis velit, quia repellat minima amet, libero.</p>
 		<div class="row">
+
+		<!-- result fetch from product category "bars" -->
+
+			<?php
+				if ($result = $connection->query($sql)) {
+					$line = $result->fetch_assoc();
+						do {
+							if ($line['category'] == "bars") {
+								?>
 			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/dietBarChoco.png" class="img--box__short"><p>Light &amp; Dier Bar με σοκολάτα, φουντούκι και σταφίδες</p></a>
+				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
 			</div>
-			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/dietBarFruits.png" class="img--box__short"><p>Light &amp; Diet Fruits Bar</p></a>
-			</div>
-			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/dietBarOrange.png" class="img--box__short"><p>Light &amp; Diet Orange Bar</p></a>
-			</div>
+
+			<?php
+							}
+						} while ($line = $result->fetch_assoc());
+					$result->close();
+				}
+			?>
+
 		</div>
 	</div>
 </section>

@@ -1,12 +1,15 @@
 <?php
 
   include('assets/php/head.php');
-  $sql="SELECT * FROM recipe where recipeID=5";
+  $sql="SELECT * FROM recipe where recipeID=".$_GET['recipeID'];
+
+  $id=$_GET['recipeID'];
+
 
   if ($result = $connection->query($sql)) {
 		$line = $result->fetch_assoc();
-    	do  {
-    	
+
+    	do  {    	
 
 ?>
 
@@ -30,11 +33,11 @@
     </nav>
 </div>		
         <h1><?php echo $line['name'];?></h1>
-        <p class="description">Φτιάξτε πεντανόστιμα, υγιεινά και πλούσια σε πρωτεΐνη μπισκότα βρώμης σε λιγότερο από 15 λεπτά. Ιδανικά για όλη την οικογένεια και για όλες τις ώρες.</p>
+        <p class="description"><?php echo $line['description'];?></p>
 	</div>
 </div>
 
-<img src="assets/img/cookies.jpg" class="image--recipe">
+<img src="assets/img/<?php echo $line['image'];?>" class="image--recipe">
 
 <section class="section--recipe section--white">
 	<div class="container">
@@ -42,21 +45,21 @@
 			<div class="column one-third">
 				<img src="assets/img/clock.png" class="icon">
 				<h4>Χρόνος εκτέλεσης</h4>
-				<p>15'</p>
+				<p><?php echo $line['prepTime'];?>'</p>
 			</div>
 			<div class="column one-third">
 				<img src="assets/img/mitten.png" class="icon">
 				<h4>Επίπεδο δυσκολίας</h4>
-				<p>Εύκολο</p>
+				<p><?php echo $line['difficulty'];?></p>
 			</div>
 			<div class="column one-third">
 				<img src="assets/img/utensils.png" class="icon">
 				<h4>Μερίδες/Τεμάχια</h4>
-				<p>10-12</p>
+				<p><?php echo $line['serves'];?></p>
 			</div>
-		</div>
+		</div>	
 
-		<a href="product.html"><img src="assets/img/oatBio.png" class="product--used"></a>
+		<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['prImage'];?>" class="product--used"></a>
 
 		<hr class="hr--recipe">
 
@@ -64,28 +67,26 @@
 			<div class="column two-fifths">
 				<h2>Συστατικά</h2>
 				<ul>
-					<li><a href="product.html"><strong>100 γρ. Βιολογικές Νιφάδες Βρώμης Millhouse</strong></a></li>
+					<li><a href="product.php?prID=<?php echo $line['prID'];?>"><strong>100 γρ. <?php echo $line['product'];?> Millhouse</strong></a></li>
 					<br>
-					<li>100 γρ. ταχίνι ή φυστικοβούτυρο</li>
-					<li>120 γρ. μέλι</li>
-					<li>1 πρέζα αλάτι</li>
-					<li>50 γρ. καρύδια χοντροκομμένα ή άλλο ξηρό καρπό χοντροκομμένο</li>
-					<li>50 γρ. σοκολάτα κουβερτούρα, χοντροκομένη</li>
-					<li>1 κ.γ. κανέλα</li>
-				</ul>
-				Για το σερβίρισμα (προαιρετικά):
-				<ul>
-					<li>φράουλες</li>
-					<li>γάλα αμυγδάλου</li>
-					<li>βατόμουρα ή μύρτιλλα</li>
+					<!-- Fetching ingredients -->
+					<?php echo $line['ingredients'];?>
+
 				</ul>
 			</div>
 			<div class="column three-fifths">
 				<h2>Εκτέλεση</h2>
-				<p>Τα πιο υγιεινά και πρωτεΐνικά μπισκότα με βρώμη! Χωρίς καθόλου βούτυρο, ζάχαρη και γλουτένη…. μόνο με 3 υλικά! Αν θέλετε να είναι ακόμα πιο πρωτεΐνικά τότε μπορείτε να προσθέσετε μέσα στο μείγμα σκόνη πρωτεΐνης.</p>
-				<p>Προθερμαίνουμε τον φούρνο στους 180°C στον αέρα. Σε ένα μπολ ανακατεύουμε το ταχίνι, το μέλι, τη κανέλα και το αλάτι. Με το που πήξει το μείγμα, σταματάμε και βάζουμε και τα 60 γρ. από τη βρώμη μας. Σε ένα μούλτι βάζουμε τα υπόλοιπα 60 γρ. βρώμης, τα χτυπάμε μέχρι να γίνουν σκόνη και τα προσθέτουμε στο μπολ μας. Βάζουμε στο μπολ και τα καρύδια ή ξηρούς καρπούς της αρεσκείας μας, τη σοκολάτα και ανακατεύουμε πολύ καλα. Βάζουμε τα γάντια μας και φτιάχνουμε ένα ένα τα μπισκότα μας και τα τοποθετούμε σε ένα ταψί με λαδόκολλα. Αφήνουμε λίγο κενό μεταξύ τους γιατί θα απλώσουν στο ψήσιμο. Ψήνουμε στον φούρνο για 10 λεπτά. Όταν είναι έτοιμα, αφαιρούμε από τον φούρνο και αφήνουμε να κρυώσουν για 5-10 λεπτά. Σερβίρουμε με γάλα αμυγδάλου, φράουλες, βατόμουρα και μύρτιλα.</p>
+				<?php echo $line['method'];?>
 			</div>
 		</div>
+
+		<?php     	
+
+			} while ($line = $result->fetch_assoc());
+					$result->close();
+				}
+
+		?>
 
 <div id="disqus_thread"></div>
 <script>
@@ -111,45 +112,48 @@ s.setAttribute('data-timestamp', +new Date());
 	</div>
 </section>
 
+
 <section class="section--recipes section--subtle">
 	<div class="container">
 		<img src="assets/img/spoon-fork.png" class="icon">
 		<h1>Άλλες συνταγές</h1>
 		<div class="row grid--recipes">
+
+		<?php 		
+
+		$sql1="SELECT * FROM recipe WHERE NOT recipeID='".$id."' ORDER BY RAND()";
+
+		if ($result = $connection->query($sql1)) {
+			
+			for ($i=0; $i < 2 ; $i++) {
+
+				$line = $result->fetch_assoc(); 
+
+		?>
 			<div class="column half">
 				<div class="tiles">
-					<a href="recipe.php" class="tile">
-						<img src="assets/img/drink1.png">
+					<a href="recipe.php?recipeID=<?php echo $line['recipeID'];?>" class="tile">
+						<img src="assets/img/<?php echo $line['image'];?>">
 						<div class="details">
-							<h2>Κοτόπουλο πανέ με βρώμη</h2>
-							<p>Φτιάξτε πεντανόστιμα, υγιεινά και πλούσια σε πρωτεΐνη μπισκότα βρώμης σε λιγότερο από 15 λεπτά. Ιδανικά για όλη την οικογένεια και για όλες τις ώρες.</p>
+							<h2><?php echo $line['name'];?></h2>
+							<p><?php echo $line['description'];?></p>
 						</div>
 					</a>
 				</div>
 			</div> 
-			<div class="column half">
-				<div class="tiles">
-					<a href="recipe.php" class="tile">
-						<img src="assets/img/drink4.png">
-						<div class="details">
-							<h2>Κοτόπουλο πανέ με βρώμη</h2>
-							<p>Φτιάξτε πεντανόστιμα, υγιεινά και πλούσια σε πρωτεΐνη μπισκότα βρώμης σε λιγότερο από 15 λεπτά. Ιδανικά για όλη την οικογένεια και για όλες τις ώρες.</p>
-						</div>
-					</a>
-				</div>
-			</div>
+
+		<?php	
+			}
+
+		$result->close();
+		} ?>
+
 		</div>
 		<a href="recipes.php" class="btn btn--outlined">Όλες οι συνταγές</a>
 	</div>
 </section>
 
-<?php     	
 
-	} while ($line = $result->fetch_assoc());
-			$result->close();
-		}
-
-?>
 
 <footer class="footer--one">
 	<div class="container">

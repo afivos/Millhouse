@@ -2,6 +2,8 @@
 
   include('assets/php/head.php');
 
+  $sql="SELECT * FROM recipe"; 
+
 ?>
 
 <div class="section__page section__page--recipes">
@@ -23,50 +25,35 @@
 		<h1>Γλυκές συνταγές</h1>
 		<img src="assets/img/vanilla.png" class="icon--fixed icon--fixed__right">
 		<div class="row grid--recipes">
+
+		<!--  result fetch from product category "dessert"-->
+
+			<?php
+				if ($result = $connection->query($sql)) {
+					$line = $result->fetch_assoc();
+						do {
+							if ($line['category'] == "dessert") {
+								?>
+
 			<div class="column half">
 				<div class="tiles">
-					<a href="recipe.php" class="tile">
-						<img src="assets/img/sweet1.png">
+					<a href="recipe.php?recipeID=<?php echo $line['recipeID'];?>" class="tile">
+						<img src="assets/img/<?php echo $line['image'];?>">
 						<div class="details">
-							<h2>Κοτόπουλο πανέ με βρώμη</h2>
-							<p>Φτιάξτε πεντανόστιμα, υγιεινά και πλούσια σε πρωτεΐνη μπισκότα βρώμης σε λιγότερο από 15 λεπτά. Ιδανικά για όλη την οικογένεια και για όλες τις ώρες.</p>
+							<h2><?php echo $line['name'];?></h2>
+							<p><?php echo $line['description'];?></p>
 						</div>
 					</a>
 				</div>
 			</div>
-			<div class="column half">
-				<div class="tiles">
-					<a href="recipe.php" class="tile">
-						<img src="assets/img/sweet2.png">
-						<div class="details">
-							<h2>Μπισκοτάκια με ταχίνι, φυστικοβούτυρο και βρώμη</h2>
-							<p>Φτιάξτε πεντανόστιμα, υγιεινά και πλούσια σε πρωτεΐνη μπισκότα βρώμης σε λιγότερο από 15 λεπτά. Ιδανικά για όλη την οικογένεια και για όλες τις ώρες.</p>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="column half">
-				<div class="tiles">
-					<a href="recipe.php" class="tile">
-						<img src="assets/img/sweet3.png">
-						<div class="details">
-							<h2>Κοτόπουλο πανέ με βρώμη</h2>
-							<p>Φτιάξτε πεντανόστιμα, υγιεινά και πλούσια σε πρωτεΐνη μπισκότα βρώμης σε λιγότερο από 15 λεπτά. Ιδανικά για όλη την οικογένεια και για όλες τις ώρες.</p>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="column half">
-				<div class="tiles">
-					<a href="recipe.php" class="tile">
-						<img src="assets/img/sweet4.png">
-						<div class="details">
-							<h2>Μπισκοτάκια με ταχίνι, φυστικοβούτυρο και βρώμη</h2>
-							<p>Φτιάξτε πεντανόστιμα, υγιεινά και πλούσια σε πρωτεΐνη μπισκότα βρώμης σε λιγότερο από 15 λεπτά. Ιδανικά για όλη την οικογένεια και για όλες τις ώρες.</p>
-						</div>
-					</a>
-				</div>
-			</div>
+
+			<?php
+							}
+						} while ($line = $result->fetch_assoc());
+					$result->close();
+				}
+			?>
+
 		</div>
 		<a href="recipes.php" class="btn btn--outlined">Περισσότερες συνταγές</a>
 	</div>
@@ -78,50 +65,34 @@
 		<img src="assets/img/blender.png" class="icon">
 		<h1>Ροφήματα</h1>
 		<div class="row grid--recipes">
+
+		<!--  result fetch from product category "smoothie"-->
+
+			<?php
+				if ($result = $connection->query($sql)) {
+					$line = $result->fetch_assoc();
+						do {
+							if ($line['category'] == "smoothie") {
+								?>
+
 			<div class="column half">
 				<div class="tiles">
-					<a href="recipe.php" class="tile">
-						<img src="assets/img/drink1.png">
+					<a href="recipe.php?recipeID=<?php echo $line['recipeID'];?>" class="tile">
+						<img src="assets/img/<?php echo $line['image'];?>">
 						<div class="details">
-							<h2>Μπισκοτάκια με ταχίνι, φυστικοβούτυρο και βρώμη</h2>
-							<p>Φτιάξτε πεντανόστιμα, υγιεινά και πλούσια σε πρωτεΐνη μπισκότα βρώμης σε λιγότερο από 15 λεπτά. Ιδανικά για όλη την οικογένεια και για όλες τις ώρες.</p>
+							<h2><?php echo $line['name'];?></h2>
+							<p><?php echo $line['description'];?></p>
 						</div>
 					</a>
 				</div>
 			</div>
-			<div class="column half">
-				<div class="tiles">
-					<a href="recipe.php" class="tile">
-						<img src="assets/img/drink2.png">
-						<div class="details">
-							<h2>Κοτόπουλο πανέ με βρώμη</h2>
-							<p>Φτιάξτε πεντανόστιμα, υγιεινά και πλούσια σε πρωτεΐνη μπισκότα βρώμης σε λιγότερο από 15 λεπτά. Ιδανικά για όλη την οικογένεια και για όλες τις ώρες.</p>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="column half">
-				<div class="tiles">
-					<a href="recipe.php" class="tile">
-						<img src="assets/img/drink3.png">
-						<div class="details">
-							<h2>Μπισκοτάκια με ταχίνι, φυστικοβούτυρο και βρώμη</h2>
-							<p>Φτιάξτε πεντανόστιμα, υγιεινά και πλούσια σε πρωτεΐνη μπισκότα βρώμης σε λιγότερο από 15 λεπτά. Ιδανικά για όλη την οικογένεια και για όλες τις ώρες.</p>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="column half">
-				<div class="tiles">
-					<a href="recipe.php" class="tile">
-						<img src="assets/img/drink4.png">
-						<div class="details">
-							<h2>Κοτόπουλο πανέ με βρώμη</h2>
-							<p>Φτιάξτε πεντανόστιμα, υγιεινά και πλούσια σε πρωτεΐνη μπισκότα βρώμης σε λιγότερο από 15 λεπτά. Ιδανικά για όλη την οικογένεια και για όλες τις ώρες.</p>
-						</div>
-					</a>
-				</div>
-			</div>
+			<?php
+							}
+						} while ($line = $result->fetch_assoc());
+					$result->close();
+				}
+			?>
+		
 			<img src="assets/img/chocolate-chips.png" class="icon--fixed icon--fixed__right">
 		</div>
 		<a href="recipes.php" class="btn btn--outlined">Περισσότερες συνταγές</a>
@@ -134,29 +105,37 @@
 		<h1>Αλμυρές συνταγές</h1>
 		<img src="assets/img/thyme.png" class="icon--fixed icon--fixed__left">
 		<div class="row grid--recipes">
+
+		<!--  result fetch from product category "salty"-->
+
+			<?php
+				if ($result = $connection->query($sql)) {
+					$line = $result->fetch_assoc();
+						do {
+							if ($line['category'] == "salty") {
+								?>
+
 			<div class="column half">
 				<div class="tiles">
-					<a href="recipe.php" class="tile">
-						<img src="assets/img/food1.png">
+					<a href="recipe.php?recipeID=<?php echo $line['recipeID'];?>" class="tile">
+						<img src="assets/img/<?php echo $line['image'];?>">
 						<div class="details">
-							<h2>Ζουμερά μπιφτέκια για burger με βρώμη</h2>
-							<p>Φτιάξτε πεντανόστιμα, υγιεινά και πλούσια σε πρωτεΐνη μπισκότα βρώμης σε λιγότερο από 15 λεπτά. Ιδανικά για όλη την οικογένεια και για όλες τις ώρες.</p>
+							<h2><?php echo $line['name'];?></h2>
+							<p><?php echo $line['description'];?></p>
 						</div>
 					</a>
 				</div>
 			</div>
-			<div class="column half">
-				<div class="tiles">
-					<a href="recipe.php" class="tile">
-						<img src="assets/img/food2.png">
-						<div class="details">
-							<h2>Κοτόπουλο πανέ με βρώμη</h2>
-							<p>Φτιάξτε πεντανόστιμα, υγιεινά και πλούσια σε πρωτεΐνη μπισκότα βρώμης σε λιγότερο από 15 λεπτά. Ιδανικά για όλη την οικογένεια και για όλες τις ώρες.</p>
-						</div>
-					</a>
-				</div>
-			</div>
+
+			<?php
+							}
+						} while ($line = $result->fetch_assoc());
+					$result->close();
+				}
+			?>
+
 		</div>
+
 		<a href="recipes.php" class="btn btn--outlined">Περισσότερες συνταγές</a>
 	</div>
 </section>

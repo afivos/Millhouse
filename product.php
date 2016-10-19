@@ -2,6 +2,18 @@
 
   include('assets/php/head.php');
 
+  $sql="SELECT * FROM product where prID=".$_GET['prID'];
+
+  $id=$_GET['prID'];
+
+  	if ($result = $connection->query($sql)) {
+		$line = $result->fetch_assoc();
+
+		$prName = $line['name'];
+		$prID = $line['prID'];
+
+    	do  {
+
 ?>
 
 <div class="section__page section__page--product">
@@ -23,9 +35,9 @@
         </ul>
     </nav>
 </div>
-        <h1>Νιφάδες Βρώμης,<br>Super Fruits &amp; Dark Chocolate</h1>
-        <p>Τραγανοί κόκοι δημητριακών με γεύση σοκολάτας. Χαμηλά λιπαρά, πλούσιο σε υδατάνθρακες.</p>
-		<img src="assets/img/oatSuper.png" class="product__image">
+        <h1><?php echo $line['name']?></h1>
+        <p><?php echo $line['description']?></p>
+		<img src="assets/img/<?php echo $line['image']?>" class="product__image">
 	</div>
 </div>
 
@@ -34,27 +46,27 @@
         <div class="row">
             <div class="two columns">
 				<h4>Ενεργειακή Αξία</h4>
-				<div class="circle">2335</div> kcal
+				<div class="circle"><?php echo $line['enaks']?></div> kcal
             </div>
             <div class="two columns">
 				<h4>Λιπαρά</h4>
-				<div class="circle">2335</div> g
+				<div class="circle"><?php echo $line['lipara']?></div> g
             </div>
             <div class="two columns">
 				<h4>Κορεσμένα</h4>
-				<div class="circle">2335</div> g
+				<div class="circle"><?php echo $line['koresmena']?></div> g
             </div>
             <div class="two columns">
 				<h4>Λιπαρά</h4>
-				<div class="circle">2335</div> g
+				<div class="circle"></div> g
             </div>
             <div class="two columns">
 				<h4>Σάκχαρα</h4>
-				<div class="circle">2335</div> g
+				<div class="circle"><?php echo $line['sakxara']?></div> g
             </div>
             <div class="two columns">
 				<h4>Αλάτι</h4>
-				<div class="circle">2335</div> g
+				<div class="circle"><?php echo $line['alati']?></div> g
             </div>
         </div>
 	</div>	
@@ -64,23 +76,47 @@
 	<div class="container">
 		<img src="assets/img/leaf.svg" class="icon">
 		<h1>Healthy Tip</h1>
-		<p class="description">Lorem ipsum dolor sit amet, mediocrem imperdiet adversarium in cum. In eum meliore reprehendunt. Solet vivendo intellegam eam id. Usu no esse aeque qualisque, quot probo voluptaria an quo.</p>
+		<p class="description"><?php echo $line['tip']?></p>
 	</div>
 </section>
+
+<?php
+    	} while ($line = $result->fetch_assoc());
+		$result->close();
+	}
+
+?>
 
 <section class="section--products section--white">
 	<div class="container">
 		<h1>Άλλα προϊόντα</h1>
 		<div class="row">
+
+<!--  Randomly fetch 3 products --> 
+
+		<?php 
+		
+
+		$sql1="SELECT * FROM product WHERE NOT prID='".$id."' ORDER BY RAND()";
+
+		if ($result = $connection->query($sql1)) {
+			
+			for ($i=0; $i < 3 ; $i++) {
+
+				$line = $result->fetch_assoc(); 
+
+		?>
+
 			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/oatSuper.png" class="img--bag"><p>Oat Super Fruits</p></a>
+				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
 			</div>
-			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/chocolate3.png" class="img--bag"><p>Choco Quick</p></a>
-			</div>
-			<div class="column one-third">
-				<a href="product.php"><img src="assets/img/chocolate2.png" class="img--bag"><p>Choco Flakes</p></a>
-			</div>
+
+		<?php	
+			}
+
+		$result->close();
+		} ?>
+
 		</div>
 		<a href="/#products" class="btn btn--outlined">Όλα τα προϊόντα</a>
 	</div>
@@ -89,30 +125,42 @@
 <section class="section--recipes section--subtle">
 	<div class="container">
 		<img src="assets/img/forkspoon.svg">
-		<h1>Συνταγές με Chocolate Pops</h1>
+		<h1>Συνταγές με <?php echo $prName;?></h1>
 		<div class="row grid--recipes">
+
+<!--   Fetch 2 recipes with the selected product --> 
+
+		<?php 
+
+		$sql2="SELECT * FROM recipe WHERE prID=$prID ORDER BY RAND()";
+
+		if ($result = $connection->query($sql2)) {
+			
+			for ($i=0; $i < 2 ; $i++) {
+
+				$line = $result->fetch_assoc(); 
+
+		?>
+
 			<div class="column half">
 				<div class="tiles">
-					<a href="recipe.php" class="tile">
-						<img src="assets/img/food2.png">
+					<a href="recipe.php?recipeID=<?php echo $line['recipeID'];?>" class="tile">
+						<img src="assets/img/<?php echo $line['image'];?>">
 						<div class="details">
-							<h2>Κοτόπουλο πανέ με βρώμη</h2>
-							<p>Φτιάξτε πεντανόστιμα, υγιεινά και πλούσια σε πρωτεΐνη μπισκότα βρώμης σε λιγότερο από 15 λεπτά. Ιδανικά για όλη την οικογένεια και για όλες τις ώρες.</p>
+							<h2><?php echo $line['name'];?></h2>
+							<p><?php echo $line['description'];?></p>
 						</div>
 					</a>
 				</div>
 			</div>
-			<div class="column half">
-				<div class="tiles">
-					<a href="recipe.php" class="tile">
-						<img src="assets/img/sweet2.png">
-						<div class="details">
-							<h2>Μπισκοτάκια με ταχίνι, φυστικοβούτυρο και βρώμη</h2>
-							<p>Φτιάξτε πεντανόστιμα, υγιεινά και πλούσια σε πρωτεΐνη μπισκότα βρώμης σε λιγότερο από 15 λεπτά. Ιδανικά για όλη την οικογένεια και για όλες τις ώρες.</p>
-						</div>
-					</a>
-				</div>
-			</div>
+
+		<?php	
+			}
+
+		$result->close();
+		} 
+		?>
+
 		</div>
 		<a href="recipes.php" class="btn btn--outlined">Όλες οι συνταγές</a>
 	</div>
