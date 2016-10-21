@@ -163,7 +163,7 @@
 							if ($line['category'] == "bars") {
 								?>
 			<div class="column one-third">
-				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
+				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--box__short"><p><?php echo $line['name']?></p></a>
 			</div>
 
 			<?php
