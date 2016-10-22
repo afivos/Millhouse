@@ -37,6 +37,16 @@
     <script src="assets/js/min/scripts-min.js"></script>
     <script src="assets/js/modernizr.custom.js"></script>
 
+    <script>
+        $(function(){
+            $('a').each(function(){
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+
     <!-- Google Analytics -->
     <script>
      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

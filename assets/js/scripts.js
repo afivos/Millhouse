@@ -29,3 +29,17 @@ $("a.hamburger").on('click', function(e) {
 $('body').toggleClass('hamburger-open');
     e.preventDefault();
 });
+
+/* --------------------------------
+
+Navbar highlight for current page
+
+-------------------------------- */
+
+$(function(){
+    $('a').each(function(){
+        if ($(this).prop('href') === window.location.href) {
+            $(this).addClass('active'); $(this).parents('li').addClass('active');
+        }
+    });
+});

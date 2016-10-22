@@ -91,6 +91,10 @@
 
 nav {
   margin-bottom: 7rem;
+  
+  .active {
+    color: $color-primary;
+  }
 
   @media (max-width: $breakpoint) {
     margin-bottom: 4rem;
