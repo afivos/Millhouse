@@ -69,6 +69,7 @@
 				<div class="circle"><?php echo $line['protein']?></div> g
             </div>
         </div>
+        <p class="note">&ast; Τα παραπάνω αντιστοιχούν σε μία μερίδα προϊόντος</p>
 	</div>	
 </section>
 
