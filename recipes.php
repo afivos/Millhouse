@@ -69,7 +69,7 @@
 			?>
 
 		</div>
-		<a href="recipes.php" class="btn btn--outlined">Περισσότερες συνταγές</a>
+		<!--<a href="recipes.php" class="btn btn--outlined">Περισσότερες συνταγές</a>-->
 	</div>
 </section>
 
@@ -109,7 +109,7 @@
 		
 			<img src="assets/img/chocolate-chips.png" class="icon--fixed icon--fixed__right">
 		</div>
-		<a href="recipes.php" class="btn btn--outlined">Περισσότερες συνταγές</a>
+		<!--<a href="recipes.php" class="btn btn--outlined">Περισσότερες συνταγές</a>-->
 	</div>
 </section>
 
@@ -150,7 +150,7 @@
 
 		</div>
 
-		<a href="recipes.php" class="btn btn--outlined">Περισσότερες συνταγές</a>
+		<!--<a href="recipes.php" class="btn btn--outlined">Περισσότερες συνταγές</a>-->
 	</div>
 </section>
 
