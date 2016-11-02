@@ -274,6 +274,23 @@ h3 { font-size: 2.6rem; }
   }
 }
 
+.healthy-tip {
+  .leaf {
+    width: 5rem;
+    margin-bottom: -1rem;
+    margin-right: 0.5rem;
+  }
+
+  .round {
+    img {
+      border-radius: 50rem;
+      max-width: 25rem;
+      margin-top: 2rem;
+      float: right;
+    }
+  }
+}
+
 
 
 
