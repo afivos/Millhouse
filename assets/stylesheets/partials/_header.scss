@@ -14,7 +14,7 @@
     margin-right: auto;
   }
 
-  @media (min-width: $breakpoint) {
+  @media (min-width: $breakpoint-sm) {
     .logo {
       margin-top: 4rem;
     }
@@ -50,7 +50,7 @@
     }
   }
 
-  @media (max-width: $breakpoint) {
+  @media (max-width: $breakpoint-sm) {
     .logo {
       margin-top: 5%;
     }
@@ -72,7 +72,7 @@
     opacity: 1;
 
     li {
-      @media (max-width: $breakpoint) {
+      @media (max-width: $breakpoint-sm) {
         margin: 1.5rem auto;
       }
 
@@ -96,7 +96,7 @@ nav {
     color: $color-primary;
   }
 
-  @media (max-width: $breakpoint) {
+  @media (max-width: $breakpoint-sm) {
     margin-bottom: 4rem;
   }
 }
@@ -208,7 +208,7 @@ nav {
 
   @media (min-width: $breakpoint) {
     + section {
-        padding-top: 20rem;
+        padding-top: 22.5rem;
     }
 
     .product__image {
@@ -245,7 +245,7 @@ nav {
     margin: 0 auto;
   }
 
-  @media (max-width: $breakpoint) {
+  @media (max-width: $breakpoint-sm) {
     padding-bottom: 20%;
     background-image: url(../img/recipes-sm.jpg);
   }
@@ -272,7 +272,7 @@ nav {
 .section__page--recipes,
 .section__page--recipe {
   ul {
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sm) {
       margin-top: -10.2rem;      
     }
   }
@@ -280,7 +280,7 @@ nav {
   nav {
     margin-bottom: 4rem;
 
-    @media (max-width: $breakpoint) {
+    @media (max-width: $breakpoint-sm) {
       margin-bottom: 3rem;
     }
   }
@@ -292,7 +292,7 @@ nav {
   padding: 0 0 50rem 0;
 
   h1 {
-    max-width: $breakpoint-sm;
+    max-width: $breakpoint;
     margin: 10% auto 0;
   }
   video {

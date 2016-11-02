@@ -1,6 +1,9 @@
+footer {
+	font-size: 90% !important;
+}
+
 footer.footer--one {
 	padding: 5rem 0 3rem;
-	font-size: 90%;
 	margin-bottom: 0;
 	background: $color-main-text;
 	color: #717171;
@@ -20,9 +23,16 @@ footer.footer--one {
 	}
 
 	img.logo {
-		max-width: 75%;
 		margin-bottom: 3%;
 		margin-top: -0.5rem;
+
+		@media (min-width: $breakpoint) and (max-width: $breakpoint) {
+			max-width: 75%;
+		}
+
+		@media (max-width: $breakpoint-sm) {
+			max-width: 12.5rem;
+		}
 	}
 
 	ul {
