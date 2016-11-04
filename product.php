@@ -20,21 +20,22 @@
 	<div class="container">
 
 		<div class="navbar">
-    <a href="/"><img class="logo" src="assets/img/logo.svg"></a>
-    <div class="navIcon visible-sm">
-        <div class="naviconUpper"></div>
-        <div class="innerNavicon"></div>
-        <div class="naviconLower"></div>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="/#products">Προϊόντα</a></li>
-            <li><a href="recipes.php">Συνταγές</a></li>
-            <li><a href="about.html">Σχετικά με εμάς</a></li>
-            <li><a href="contact.html">Επικοινωνία</a></li>
-        </ul>
-    </nav>
-</div>
+		    <a href="/"><img class="logo" src="assets/img/logo.svg"></a>
+		    <div class="navIcon visible-sm">
+		        <div class="naviconUpper"></div>
+		        <div class="innerNavicon"></div>
+		        <div class="naviconLower"></div>
+		    </div>
+		    <nav>
+		        <ul>
+		            <li><a href="/#products">Προϊόντα</a></li>
+		            <li><a href="recipes.php">Συνταγές</a></li>
+		            <li><a href="about.html">Σχετικά με εμάς</a></li>
+		            <li><a href="contact.html">Επικοινωνία</a></li>
+		        </ul>
+		    </nav>
+		</div>
+
         <h1><?php echo $line['name']?></h1>
         <p><?php echo $line['description']?></p>
 		<img src="assets/img/<?php echo $line['image']?>" class="product__image">
@@ -81,7 +82,7 @@
 				<img src="assets/img/leaf.svg" class="leaf"> Healthy Tip</h1>
 				<p><?php echo $line['tip']?></p>
 			</div>
-			<div class="column five">
+			<div class="column five hidden-sm">
 				<div class="round">
 					<img src="assets/img/oat.jpg">
 				</div>
