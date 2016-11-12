@@ -347,7 +347,20 @@ nav {
   }
 }
 
+.section__page--contact {
+  p {
+    max-width: 100%;
+  }
 
+  iframe {
+    margin-top: 2rem;
+  }
+
+  .icon {
+    display: block;
+    margin: 6rem auto 8rem;
+  }
+}
 
 
 
