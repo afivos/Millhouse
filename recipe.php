@@ -17,21 +17,22 @@
 	<div class="container">
 
 		<div class="navbar">
-    <a href="/"><img class="logo" src="assets/img/logo-recipes.svg"></a>
-    <div class="navIcon visible-sm">
-        <div class="naviconUpper"></div>
-        <div class="innerNavicon"></div>
-        <div class="naviconLower"></div>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="/#products">Προϊόντα</a></li>
-            <li><a href="recipes.php">Συνταγές</a></li>
-            <li><a href="about.html">Σχετικά με εμάς</a></li>
-            <li><a href="contact.html">Επικοινωνία</a></li>
-        </ul>
-    </nav>
-</div>		
+		    <a href="/"><img class="logo" src="assets/img/logo-recipes.svg"></a>
+		    <div class="navIcon visible-sm">
+		        <div class="naviconUpper"></div>
+		        <div class="innerNavicon"></div>
+		        <div class="naviconLower"></div>
+		    </div>
+		    <nav>
+		        <ul>
+		            <li><a href="/#products">Προϊόντα</a></li>
+		            <li><a href="recipes.php">Συνταγές</a></li>
+		            <li><a href="about.html">Σχετικά με εμάς</a></li>
+		            <li><a href="contact.html">Επικοινωνία</a></li>
+		        </ul>
+		    </nav>
+		</div>
+		
         <h1><?php echo $line['name'];?></h1>
         <p class="description"><?php echo $line['description'];?></p>
 	</div>
@@ -45,17 +46,17 @@
 	<div class="container">
 		<div class="row text-center">
 			<div class="column one-third">
-				<img src="assets/img/clock.png" class="icon">
+				<img src="assets/img/hourglass.svg" class="icon">
 				<h4>Χρόνος εκτέλεσης</h4>
 				<p><?php echo $line['prepTime'];?>'</p>
 			</div>
 			<div class="column one-third">
-				<img src="assets/img/mitten.png" class="icon">
+				<img src="assets/img/chef.svg" class="icon">
 				<h4>Επίπεδο δυσκολίας</h4>
 				<p><?php echo $line['difficulty'];?></p>
 			</div>
 			<div class="column one-third">
-				<img src="assets/img/utensils.png" class="icon">
+				<img src="assets/img/utensils.svg" class="icon">
 				<h4>Μερίδες/Τεμάχια</h4>
 				<p><?php echo $line['serves'];?></p>
 			</div>
@@ -117,7 +118,7 @@ s.setAttribute('data-timestamp', +new Date());
 
 <section class="section--recipes section--subtle">
 	<div class="container">
-		<img src="assets/img/spoon-fork.png" class="icon">
+		<img src="assets/img/spoon-fork.svg" class="icon">
 		<h1>Άλλες συνταγές</h1>
 		<div class="row grid--recipes">
 

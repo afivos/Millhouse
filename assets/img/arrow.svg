@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>down-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,19.9335548 C0,30.9419269 8.92451827,39.8675083 19.9331561,39.8675083 C30.941794,39.8675083 39.8672425,30.9419269 39.8672425,19.9335548 C39.8672425,8.92478405 30.9423256,0 19.9334219,0 C8.92465116,0 0,8.92478405 0,19.9335548 Z" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.274509804   0 0 0 0 0.274509804   0 0 0 0 0.31372549  0 0 0 0.35 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="down-arrow" transform="translate(4.000000, 2.000000)">
+            <g id="Layer_1">
+                <g id="Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M26.6116515,16.2434523 L19.9944896,22.8622075 L13.3773278,16.2426556 C13.0618423,15.9271701 12.5515021,15.9271701 12.2360166,16.2426556 C11.9213278,16.5581411 11.9213278,17.069278 12.2360166,17.3847635 L19.4234689,24.5746058 L19.4234689,24.5746058 L19.4234689,24.5746058 C19.7381577,24.8900913 20.2492946,24.8900913 20.5639834,24.5746058 L27.7514357,17.3848299 C28.0661245,17.0693444 28.0661245,16.5574108 27.7514357,16.2419253 C27.4375436,15.9279668 26.9263402,15.9279668 26.6116515,16.2434523 L26.6116515,16.2434523 Z" id="Expand_More" fill="#464650"></path>
+            </g>
+        </g>
+    </g>
+</svg>

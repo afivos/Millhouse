@@ -10,21 +10,22 @@
 	<div class="container">
 
 		<div class="navbar">
-    <a href="/"><img class="logo" src="assets/img/logo-recipes.svg"></a>
-    <div class="navIcon visible-sm">
-        <div class="naviconUpper"></div>
-        <div class="innerNavicon"></div>
-        <div class="naviconLower"></div>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="/#products">Προϊόντα</a></li>
-            <li><a href="recipes.php">Συνταγές</a></li>
-            <li><a href="about.html">Σχετικά με εμάς</a></li>
-            <li><a href="contact.html">Επικοινωνία</a></li>
-        </ul>
-    </nav>
-</div>		
+		    <a href="/"><img class="logo" src="assets/img/logo-recipes.svg"></a>
+		    <div class="navIcon visible-sm">
+		        <div class="naviconUpper"></div>
+		        <div class="innerNavicon"></div>
+		        <div class="naviconLower"></div>
+		    </div>
+		    <nav>
+		        <ul>
+		            <li><a href="/#products">Προϊόντα</a></li>
+		            <li><a href="recipes.php">Συνταγές</a></li>
+		            <li><a href="about.html">Σχετικά με εμάς</a></li>
+		            <li><a href="contact.html">Επικοινωνία</a></li>
+		        </ul>
+		    </nav>
+		</div>
+		
         <h1>Οι συνταγές μας</h1>
         <p class="description">Πεντανόστιμες, απολαυστικές, εύκολες και γρήγορες συνταγές με τα προϊόντα Millhouse. Φτιάξτε αλμυρά πιάτα, γλυκές λιχουδιές και ροφήματα για όλες τις ώρες.</p>
 	    <div id="arrow-down">
@@ -35,7 +36,7 @@
 
 <section class="section--recipes section--white" id="recipes">
 	<div class="container">
-		<img src="assets/img/mixer.png" class="icon">
+		<img src="assets/img/mixer.svg" class="icon">
 		<h1>Γλυκές συνταγές</h1>
 		<img src="assets/img/vanilla.png" class="icon--fixed icon--fixed__right">
 		<div class="row grid--recipes">
@@ -76,7 +77,7 @@
 <section class="section--recipes section--subtle section--angled">
 	<img src="assets/img/berries.png" class="icon--fixed icon--fixed__left">
 	<div class="container">
-		<img src="assets/img/blender.png" class="icon">
+		<img src="assets/img/blender.svg" class="icon">
 		<h1>Ροφήματα</h1>
 		<div class="row grid--recipes">
 
@@ -115,7 +116,7 @@
 
 <section class="section--recipes section--white">
 	<div class="container">
-		<img src="assets/img/salt-pepper.png" class="icon">
+		<img src="assets/img/salt-pepper.svg" class="icon">
 		<h1>Αλμυρές συνταγές</h1>
 		<img src="assets/img/thyme.png" class="icon--fixed icon--fixed__left">
 		<div class="row grid--recipes">
