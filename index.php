@@ -9,21 +9,22 @@
 	<div class="container">
 
 		<div class="navbar">
-    <a href="/"><img class="logo" src="assets/img/logo.svg"></a>
-    <div class="navIcon visible-sm">
-        <div class="naviconUpper"></div>
-        <div class="innerNavicon"></div>
-        <div class="naviconLower"></div>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="/#products">Προϊόντα</a></li>
-            <li><a href="recipes.php">Συνταγές</a></li>
-            <li><a href="about.html">Σχετικά με εμάς</a></li>
-            <li><a href="contact.html">Επικοινωνία</a></li>
-        </ul>
-    </nav>
-</div>
+		    <a href="/"><img class="logo" src="assets/img/logo.svg"></a>
+		    <div class="navIcon visible-sm">
+		        <div class="naviconUpper"></div>
+		        <div class="innerNavicon"></div>
+		        <div class="naviconLower"></div>
+		    </div>
+		    <nav>
+		        <ul>
+		            <li><a href="/#products">Προϊόντα</a></li>
+		            <li><a href="recipes.php">Συνταγές</a></li>
+		            <li><a href="about.html">Σχετικά με εμάς</a></li>
+		            <li><a href="contact.html">Επικοινωνία</a></li>
+		        </ul>
+		    </nav>
+		</div>
+
         <h1>Εδώ και δύο δεκαετίες λέμε μαζί "καλημέρα" με τα πιο υγιεινά και απολαυστικά δημητριακά για όλη την οικογένεια!</h1>
         <a href="#products" class="btn btn--filled">Δείτε τα προϊόντα μας</a>
 	</div>

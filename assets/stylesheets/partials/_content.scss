@@ -1,27 +1,27 @@
 html { font-size: 62.5%; }
 
 body {
-	padding: 0;
-	margin: 0;
-	font-family: $font-content;
+  padding: 0;
+  margin: 0;
+  font-family: $font-content;
   font-weight: normal;
   font-style: normal;
-	color: $color-main-text;
+  color: $color-main-text;
   line-height: 1.5;
   letter-spacing: 0.05rem;
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: $font-heading;
+  font-family: $font-heading;
   font-weight: normal;
   font-style: normal;
   line-height: 1.25;
-	@extend %font-regular;
+  @extend %font-regular;
 }
 
 .container {
-	margin: 0 auto;
-	max-width: $breakpoint;
+  margin: 0 auto;
+  max-width: $breakpoint;
 
   @media (max-width: $breakpoint) {
     padding-left: 5%;
@@ -35,18 +35,18 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 a {
-	color: $color-link;
+  color: $color-link;
   text-decoration: none;
 
   &:hover,
   &:active {
-  	text-decoration: underline;
+    text-decoration: underline;
   }
 }
 
 p { margin-bottom: 3rem; }
 
-img {	max-width: 100%; }
+img { max-width: 100%; }
 
 hr {
   border: 0;
@@ -73,15 +73,15 @@ h3 { font-size: 2.6rem; }
 // Helpful classes
 
 .hidden-sm {
-	@media (max-width: $breakpoint-sm) {
-		display: none;
-	}
+  @media (max-width: $breakpoint-sm) {
+    display: none;
+  }
 }
 
 .visible-sm {
-	@media (min-width: $breakpoint-sm) {
-		display: none;
-	}
+  @media (min-width: $breakpoint-sm) {
+    display: none;
+  }
 }
 
 .text-center {
@@ -122,13 +122,13 @@ h3 { font-size: 2.6rem; }
 // Button Global
 
 .btn {
-	display: inline-block;
-	padding: 1.6rem 2.6rem;
-	border: 0.2rem solid;
-	border-radius: 0.8rem;
-	@extend %transition-2;
-	text-decoration: none;
-	cursor: pointer;
+  display: inline-block;
+  padding: 1.6rem 2.6rem;
+  border: 0.2rem solid;
+  border-radius: 0.8rem;
+  @extend %transition-2;
+  text-decoration: none;
+  cursor: pointer;
 
   &:after,
   &:before {
@@ -166,29 +166,29 @@ h3 { font-size: 2.6rem; }
 // Button Variables
 
 .btn--filled {
-	@include btn-filled($color-primary);
+  @include btn-filled($color-primary);
 }
 
 .btn--outlined {
-	@include btn-outlined($color-primary);
+  @include btn-outlined($color-primary);
 }
 
 .btn--outlined--white {
-	@include btn-outlined($color-white);
+  @include btn-outlined($color-white);
 }
 
 // Product page
 
 .circle {
-	background: $color-primary;
-	color: $color-white;
-	width: 10rem;
-	height: 10rem;
-	border-radius: 50%;
-	line-height: 10rem;
-	text-align: center;
-	font-size: 2.2rem;
-	display: inline-block;
+  background: $color-primary;
+  color: $color-white;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  line-height: 10rem;
+  text-align: center;
+  font-size: 2.2rem;
+  display: inline-block;
   font-family: $font-fixed;
 
   @media (max-width: $breakpoint) {
@@ -357,6 +357,11 @@ h3 { font-size: 2.6rem; }
     overflow: hidden;
     position: relative;
     box-shadow: 0 0 2rem 0 rgba($color-primary,.05);
+
+    @media (min-width: $breakpoint) {
+      width: 45rem;
+      height: 37.1rem;
+    }
     
     &:before {
       content: '';
@@ -378,7 +383,9 @@ h3 { font-size: 2.6rem; }
     
     img {
       display: block;
-      max-width: 100%;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
       backface-visibility: hidden;
     }
     
