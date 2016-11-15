@@ -171,8 +171,7 @@ nav {
   background:
     linear-gradient(to bottom, rgba(255,255,255,0.65)
       0%,rgba(255,255,255,0) 20%,rgba(255,255,255,0) 100%)
-      no-repeat center center,
-      url(../img/girl.jpg) no-repeat center center;
+      no-repeat center center, no-repeat center center;
   filter:
     progid:DXImageTransform.Microsoft.gradient(
       startColorstr='#a6000000',
@@ -192,7 +191,7 @@ nav {
 }
 
 .section__page--product {
-  background: url(../img/grass.jpg) no-repeat center center;
+  background: no-repeat center center;
   background-size: cover;
   background-size: fixed;
   padding: 0 0 40rem 0;
@@ -231,7 +230,7 @@ nav {
 }
 
 .section__page--recipes {
-  background: url(../img/recipes.jpg) no-repeat center center;
+  background: no-repeat center center;
   background-size: cover;
   background-size: fixed;
   padding: 0 0 80rem 0;
@@ -251,7 +250,6 @@ nav {
 }
 
 .section__page--error {
-  background-image: url(../img/field.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

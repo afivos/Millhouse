@@ -16,7 +16,7 @@
 
 ?>
 
-<div class="section__page section__page--product">
+<div class="section__page section__page--product" data-parallax="scroll" data-image-src="assets/img/grass.jpg">
 	<div class="container">
 
 		<div class="navbar">
