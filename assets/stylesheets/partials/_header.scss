@@ -365,12 +365,18 @@ nav {
 }
 
 .section__page--contact {
+  background: no-repeat center center;
+  background-size: cover;
+  background-size: fixed;
+  background-attachment: fixed;
+  padding: 0 0 12.5% 0;
+
   p {
     max-width: 100%;
   }
 
   iframe {
-    margin-top: 2rem;
+    margin-top: 3em;
   }
 
   .icon {
