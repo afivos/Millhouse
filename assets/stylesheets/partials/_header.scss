@@ -245,7 +245,7 @@ nav {
 
   @media (max-width: $breakpoint-sm) {
     padding-bottom: 20%;
-    background-image: url(../img/recipes-sm.jpg);
+    background-image: url(../img/recipes-sm.jpg) !important;
   }
 }
 
