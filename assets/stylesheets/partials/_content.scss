@@ -356,29 +356,32 @@ h3 { font-size: 2.6rem; }
     text-align: left;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 0 2rem 0 rgba($color-primary,.05);
+    //box-shadow: 0 0 2rem 0 rgba($color-primary,.05);
 
     @media (min-width: $breakpoint) {
       width: 45rem;
       height: 37.1rem;
+
+      &:before {
+        content: '';
+        background: linear-gradient(
+          to top,
+          rgba($color-primary,0.5) 0%,
+          rgba($color-primary,1) 100%
+        );
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        z-index: 2;
+        transition-property: top, opacity;
+      }
     }
-    
+
     &:before {
-      content: '';
-      background: linear-gradient(
-        to top,
-        rgba($color-primary,0.5) 0%,
-        rgba($color-primary,1) 100%
-      );
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      position: absolute;
-      bottom: 100%;
-      left: 0;
-      z-index: 2;
-      transition-property: top, opacity;
-      @extend %transition-3;
+      @extend %transition-2;
     }
     
     img {
@@ -388,33 +391,39 @@ h3 { font-size: 2.6rem; }
       height: 100%;
       backface-visibility: hidden;
     }
-    
+
     .details {
-      padding: 4rem;
-      //max-width: 99%;
-      color: $color-white;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 3;
-      
       * {
-        text-decoration: none;
-        display: block;
-        opacity: 0;
-        position: relative;
-        color: $color-white;
-        margin-top: 0;
-        bottom: 10rem;
-        transition-property: bottom, opacity;
         @extend %transition-3;
-        transition-delay: 0s;
+      }
+
+      @media (min-width: $breakpoint) {
+        padding: 4rem;
+        //max-width: 99%;
+        color: $color-white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+
+        * {
+          text-decoration: none;
+          display: block;
+          opacity: 0;
+          position: relative;
+          color: $color-white;
+          margin-top: 0;
+          bottom: 10rem;
+          transition-property: bottom, opacity;
+          transition-delay: 0s;
+        }
       }
 
       @media (max-width: $breakpoint) {
-        padding: 2rem;
-
-        p { display: none; }
+        margin-top: -0.5rem;
+        p {
+          display: none;
+        }
       }
     }
     
