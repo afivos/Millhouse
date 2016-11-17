@@ -17,7 +17,7 @@
 ?>
 
 <div class="section__page section__page--product" data-parallax="scroll" data-image-src="assets/img/grass.jpg">
-	<div class="container">
+	<div class="container" data-speed="0.5">
 
 		<div class="navbar">
 		    <a href="/"><img class="logo" src="assets/img/logo.svg"></a>

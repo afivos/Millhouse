@@ -5,7 +5,7 @@
 
 ?>
 
-<div class="section__page section__page--index" data-parallax="scroll" data-image-src="assets/img/girl.jpg">
+<div class="section__page section__page--index" data-parallax="scroll" data-image-src="assets/img/girl.jpg" data-speed="0.5">
 	<div class="container">
 
 		<div class="navbar">
@@ -90,7 +90,7 @@
 	</div>
 </section>
 
-<section class="section--products section--photo" data-parallax="scroll" data-image-src="assets/img/light-diet.jpg">
+<section class="section--products section--photo" data-parallax="scroll" data-image-src="assets/img/light-diet.jpg" data-speed="0.5">
 	<div class="container">
 		<h1>Light &amp; Diet</h1>
 		<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nostrum blanditiis velit, quia repellat minima amet, libero.</p>

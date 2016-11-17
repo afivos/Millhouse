@@ -6,7 +6,7 @@
 
 ?>
 
-<div class="section__page section__page--recipes" data-parallax="scroll" data-image-src="assets/img/recipes.jpg">
+<div class="section__page section__page--recipes" data-parallax="scroll" data-image-src="assets/img/recipes.jpg" data-speed="0.5">
 	<div class="container">
 
 		<div class="navbar">
