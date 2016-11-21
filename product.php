@@ -29,7 +29,7 @@
 		    <nav>
 		        <ul>
 		            <li><a href="/#products">Προϊόντα</a></li>
-		            <li><a href="recipes.php">Συνταγές</a></li>
+		            <li><a href="recipes">Συνταγές</a></li>
 		            <li><a href="about.html">Σχετικά με εμάς</a></li>
 		            <li><a href="contact.html">Επικοινωνία</a></li>
 		        </ul>
@@ -119,7 +119,7 @@
 		?>
 
 			<div class="column one-third">
-				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
+				<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
 			</div>
 
 		<?php	
@@ -155,7 +155,7 @@
 
 			<div class="column half">
 				<div class="tiles">
-					<a href="recipe.php?recipeID=<?php echo $line['recipeID'];?>" class="tile">
+					<a href="recipe?recipeID=<?php echo $line['recipeID'];?>" class="tile">
 						<img src="assets/img/<?php echo $line['image'];?>">
 						<div class="details">
 							<h2><?php echo $line['name'];?></h2>
@@ -173,7 +173,7 @@
 		?>
 
 		</div>
-		<a href="recipes.php" class="btn btn--outlined">Όλες οι συνταγές</a>
+		<a href="recipes" class="btn btn--outlined">Όλες οι συνταγές</a>
 	</div>
 </section>
 <footer class="footer--one">
@@ -185,7 +185,7 @@
 			<div class="column one-fourth">
 				<ul>
 					<li><a href="/#products--1">Προϊόντα</a></li>
-					<li><a href="recipes.php">Συνταγές</a></li>
+					<li><a href="recipes">Συνταγές</a></li>
 				</ul>
 			</div>
 			<div class="column one-fourth">
