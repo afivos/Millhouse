@@ -6,7 +6,7 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^(www\.localhost:8888)(:80)? [NC]
 RewriteRule ^(.*) http://localhost:8888/$1 [R=301,L]
 DirectoryIndex index.php  
-ErrorDocument 404 http://localhost:8888/404.html    
+ErrorDocument 404 http://localhost:8888/404    
 order deny,allow
 
 RewriteEngine On
