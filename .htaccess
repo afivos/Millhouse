@@ -1,0 +1,14 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www\.localhost:8888)(:80)? [NC]
+RewriteRule ^(.*) http://localhost:8888/$1 [R=301,L]
+DirectoryIndex index.php  
+ErrorDocument 404 http://localhost:8888/404.html    
+order deny,allow
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
