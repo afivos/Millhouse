@@ -6,7 +6,7 @@ $font-heading:	"GraublauSans-BoldItalic", "Helvetica Neue", "Helvetica", "Arial"
 $font-content:	"GraublauSans-Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $font-fixed:	"Consolas", monospace;
 
-$breakpoint:	102.4rem;
-$breakpoint-sm:	76.8rem;
+$breakpoint:	1024px;
+$breakpoint-sm:	768px;
 
 @import "../modules/all";
