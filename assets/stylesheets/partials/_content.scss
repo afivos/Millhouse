@@ -163,6 +163,43 @@ h3 { font-size: 2.6rem; }
   }
 }
 
+.btn-sm {
+  padding: 0.6rem 1.6rem;
+  margin-bottom: 0.75rem;
+  font-size: 80%;
+  border: 0.1rem solid;
+  border-radius: 0.6rem;
+
+  @media (min-width: $breakpoint-sm) {
+    &:after,
+    &:before {
+      display: inline-block;
+      font-size: 3rem;
+      position: absolute;
+      content: '›';
+      opacity: 0;
+      margin-top: -1.6rem;
+      margin-left: 0.45rem;
+
+
+
+-ms-transform:rotate(90deg); /* IE 9 */
+  -moz-transform:rotate(90deg); /* Firefox */
+  -webkit-transform:rotate(90deg); /* Safari and Chrome */
+  -o-transform:rotate(90deg); /* Opera */
+    }
+
+    &:hover {
+      padding-right: 3.3rem;
+
+      &:after {
+        opacity: 1;
+        padding-left: 1.25rem;
+      }
+    }
+  }
+}
+
 // Button Variables
 
 .btn--filled {

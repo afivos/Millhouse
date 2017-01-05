@@ -28,6 +28,10 @@
 		
         <h1>Οι συνταγές μας</h1>
         <p class="description">Πεντανόστιμες, απολαυστικές, εύκολες και γρήγορες συνταγές με τα προϊόντα Millhouse. Φτιάξτε αλμυρά πιάτα, γλυκές λιχουδιές και ροφήματα για όλες τις ώρες.</p>
+
+		<a href="#recipes" class="btn btn-sm btn--outlined">Γλυκές συνταγές</a>
+		<a href="#drinks" class="btn btn-sm btn--outlined">Ροφήματα</a>
+		<a href="#deserts" class="btn btn-sm btn--outlined">Αλμυρές Συνταγές</a>
 	    <div id="arrow-down">
 	      <a href="#recipes" class="button-down"></a>
 	    </div>
@@ -74,7 +78,7 @@
 	</div>
 </section>
 
-<section class="section--recipes section--subtle section--angled">
+<section class="section--recipes section--subtle section--angled" id="drinks">
 	<img src="assets/img/berries.png" class="icon--fixed icon--fixed__left">
 	<div class="container">
 		<img src="assets/img/blender.svg" class="icon">
@@ -114,7 +118,7 @@
 	</div>
 </section>
 
-<section class="section--recipes section--white">
+<section class="section--recipes section--white" id="deserts">
 	<div class="container">
 		<img src="assets/img/salt-pepper.svg" class="icon">
 		<h1>Αλμυρές συνταγές</h1>
