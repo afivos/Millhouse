@@ -12,6 +12,8 @@
 		$prName = $line['name'];
 		$prID = $line['prID'];
 
+		$recNumber = $line['recNumber'];
+
     	do  {
 
 ?>
@@ -92,15 +94,11 @@
 
 		<?php 
 		
-
 		$sql1="SELECT * FROM product WHERE NOT prID='".$id."' ORDER BY RAND()";
 
-		if ($result = $connection->query($sql1)) {
-			
+		if ($result = $connection->query($sql1)) {			
 			for ($i=0; $i < 3 ; $i++) {
-
 				$line = $result->fetch_assoc(); 
-
 		?>
 
 			<div class="column one-third">
@@ -118,27 +116,67 @@
 	</div>
 </section>
 
+
+<!--   Recipes with the selected product --> 
+
+	<?php 
+	
+	$sql2="SELECT * FROM recipe WHERE prID=$prID ORDER BY RAND()";
+
+	if ($result = $connection->query($sql2)) {
+
+			if ($recNumber == '0') {}		
+
+			elseif ($recNumber == '1') {
+	?>
+
 <section class="section--recipes section--subtle">
 	<div class="container">
 		<img src="assets/img/spoon-fork.svg">
 		<h1>Συνταγές με <?php echo $prName;?></h1>
 		<div class="row grid--recipes">
 
-<!--   Fetch 2 recipes with the selected product --> 
-
-		<?php 
-
-		$sql2="SELECT * FROM recipe WHERE prID=$prID ORDER BY RAND()";
-
-		if ($result = $connection->query($sql2)) {
-			
-			for ($i=0; $i < 2 ; $i++) {
-
+	<?php
+				for ($i=0; $i < 1 ; $i++) {
 				$line = $result->fetch_assoc(); 
+	?>
+				<div class="column half">
+				<div class="tiles">
+					<a href="recipe?recipeID=<?php echo $line['recipeID'];?>" class="tile">
+						<img src="assets/img/<?php echo $line['image'];?>">
+						<div class="details">
+							<h2><?php echo $line['name'];?></h2>
+							<p><?php echo $line['description'];?></p>
+						</div>
+					</a>
+				</div>
+			</div>
+	<?php
+				}
+	?>
 
-		?>
+		</div>
+		<a href="recipes" class="btn btn--outlined">Όλες οι συνταγές</a>
+	</div>
+</section>
+	
+	<?php
+			}
+			else {
+	?>
 
-			<div class="column half">
+<section class="section--recipes section--subtle">
+	<div class="container">
+		<img src="assets/img/spoon-fork.svg">
+		<h1>Συνταγές με <?php echo $prName;?></h1>
+		<div class="row grid--recipes">
+
+	<?php
+
+				for ($i=0; $i < 2 ; $i++) {
+				$line = $result->fetch_assoc(); 
+	?>
+				<div class="column half">
 				<div class="tiles">
 					<a href="recipe?recipeID=<?php echo $line['recipeID'];?>" class="tile">
 						<img src="assets/img/<?php echo $line['image'];?>">
@@ -150,15 +188,19 @@
 				</div>
 			</div>
 
-		<?php	
+	<?php
+				}
+	?>
+
+		</div>
+		<a href="recipes" class="btn btn--outlined">Όλες οι συνταγές</a>
+	</div>
+</section>		
+
+	§<?php	
 			}
 
 		$result->close();
 		} 
 		?>
-
-		</div>
-		<a href="recipes" class="btn btn--outlined">Όλες οι συνταγές</a>
-	</div>
-</section>
 <!-- @import "footer" -->
