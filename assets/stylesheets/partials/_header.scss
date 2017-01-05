@@ -325,6 +325,32 @@ nav {
   color: $color-white;
   padding: 0 0 50rem 0;
 
+  .navIcon {
+    .naviconUpper {
+      border-top: 3px solid $color-white;
+    }
+
+    .innerNavicon {
+      border-top: 3px solid $color-white;
+    }
+
+    .naviconLower {
+      border-bottom: 3px solid $color-white;
+    }
+
+    .naviconUpper.on {
+      border-top: 3px solid $color-white;
+    }
+
+    .innerNavicon.on {
+      border-top: 3px solid $color-white;
+    }
+
+    .naviconLower.on {
+      border-bottom: 3px solid $color-white;
+    }
+  }
+
   h1 {
     max-width: $breakpoint;
     margin: 10% auto 0;
