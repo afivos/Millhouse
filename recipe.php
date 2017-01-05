@@ -68,7 +68,7 @@
 			<div class="column two-fifths">
 				<h2>Συστατικά</h2>
 				<ul>
-					<li><a href="product?prID=<?php echo $line['prID'];?>"><strong>100 γρ. <?php echo $line['product'];?> Millhouse</strong></a></li>
+					<li><a href="product?prID=<?php echo $line['prID'];?>"><strong><?php echo $line['productGrams'];?> γρ. <?php echo $line['product'];?> Millhouse</strong></a></li>
 					<br>
 					<!-- Fetching ingredients -->
 					<?php echo $line['ingredients'];?>
