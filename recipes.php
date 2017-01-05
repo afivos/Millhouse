@@ -31,7 +31,7 @@
 
 		<a href="#recipes" class="btn btn-sm btn--outlined">Γλυκές συνταγές</a>
 		<a href="#drinks" class="btn btn-sm btn--outlined">Ροφήματα</a>
-		<a href="#deserts" class="btn btn-sm btn--outlined">Αλμυρές Συνταγές</a>
+		<a href="#desserts" class="btn btn-sm btn--outlined">Αλμυρές Συνταγές</a>
 	    <div id="arrow-down">
 	      <a href="#recipes" class="button-down"></a>
 	    </div>
@@ -118,7 +118,7 @@
 	</div>
 </section>
 
-<section class="section--recipes section--white" id="deserts">
+<section class="section--recipes section--white" id="desserts">
 	<div class="container">
 		<img src="assets/img/salt-pepper.svg" class="icon">
 		<h1>Αλμυρές συνταγές</h1>
