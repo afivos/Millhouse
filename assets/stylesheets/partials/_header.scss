@@ -179,8 +179,6 @@ nav {
       GradientType=0
     );
   background-size: cover;
-  background-size: fixed;
-  background-attachment: fixed;
   padding: 0 0 25% 0;
 
   h1 {
@@ -193,7 +191,6 @@ nav {
 .section__page--product {
   background: no-repeat center center;
   background-size: cover;
-  background-size: fixed;
   padding: 0 0 40rem 0;
   position: relative;
   text-align: center;
@@ -232,7 +229,6 @@ nav {
 .section__page--recipes {
   background: no-repeat center center;
   background-size: cover;
-  background-size: fixed;
   padding: 0 0 80rem 0;
   position: relative;
   text-align: center;
@@ -380,8 +376,6 @@ nav {
 .section__page--contact {
   background: no-repeat center center;
   background-size: cover;
-  background-size: fixed;
-  background-attachment: fixed;
   padding: 0 0 12.5% 0;
 
   p {
