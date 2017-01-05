@@ -62,7 +62,7 @@
 	    <nav>
 	        <ul>
 	            <li><a href="/#products">Προϊόντα</a></li>
-	            <li><a href="recipes.php">Συνταγές</a></li>
+	            <li><a href="recipes">Συνταγές</a></li>
 	            <li><a href="about.html">Σχετικά με εμάς</a></li>
 	            <li><a href="contact.html">Επικοινωνία</a></li>
 	        </ul>
@@ -84,7 +84,7 @@
 			<div class="column one-fourth">
 				<ul>
 					<li><a href="/#products--1">Προϊόντα</a></li>
-					<li><a href="recipes.php">Συνταγές</a></li>
+					<li><a href="recipes">Συνταγές</a></li>
 				</ul>
 			</div>
 			<div class="column one-fourth">
@@ -95,8 +95,8 @@
 			</div>
 			<div class="column one-fourth">
 				<ul class="social-icons">
-					<li><a href="http://facebook.com/millhouse.cereals"><img src="assets/img/facebook.svg"></a></li>
-					<li><a href="http://instagram.com/millhousecereals"><img src="assets/img/instagram.svg"></a></li>
+					<li><a href="http://facebook.com/millhouse.cereals" target="_blank"><img src="assets/img/facebook.svg"></a></li>
+					<li><a href="http://instagram.com/millhousecereals" target="_blank"><img src="assets/img/instagram.svg"></a></li>
 				</ul>
 			</div>
 		</div>
@@ -105,7 +105,7 @@
 
 <footer class="footer--two" style="background: #383838; color: white; margin: 0;">
 	<div class="container">
-		<p class="text-center">Copyright &copy; <script>new Date().getFullYear()>2014&&document.write(""+new Date().getFullYear());</script> <a href="http://introfex.gr">Introfex LTD</a>. All rights reserved. Handmade with <span style="color:#f24242;">♥</span> by <a href="http://afivos.com">Fivos Avgerinos</a>.</p>
+		<p class="text-center">Copyright &copy; <script>new Date().getFullYear()>2014&&document.write(""+new Date().getFullYear());</script> <a href="http://introfex.gr" target="_blank">Introfex LTD</a>. All rights reserved. Handmade with <span style="color:#f24242;">♥</span> by <a href="http://afivos.com" target="_blank">Fivos Avgerinos</a>.</p>
 	</div>
 </footer>
 
