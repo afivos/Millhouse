@@ -161,6 +161,10 @@ section {
 			max-height: 25rem !important;
 		}
 	}
+
+	a p {
+		font-family: $font-heading !important;
+	}
 }
 
 .section--products,
