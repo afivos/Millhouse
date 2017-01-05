@@ -257,10 +257,7 @@ nav {
         font-size: 3rem;
         margin-top: -1.55rem;
         margin-left: 0.45rem;
-        -ms-transform:rotate(90deg); /* IE 9 */
-        -moz-transform:rotate(90deg); /* Firefox */
-        -webkit-transform:rotate(90deg); /* Safari and Chrome */
-        -o-transform:rotate(90deg); /* Opera */
+        transform: rotate(90deg);
       }
 
       &:hover {
