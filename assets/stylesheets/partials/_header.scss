@@ -247,6 +247,27 @@ nav {
     padding-bottom: 20%;
     background-image: url(../img/recipes-sm.jpg) !important;
   }
+
+  .btn {
+    margin-bottom: 0.75rem;
+
+    @media (min-width: $breakpoint-sm) {
+      &:after,
+      &:before {
+        font-size: 3rem;
+        margin-top: -1.55rem;
+        margin-left: 0.45rem;
+        -ms-transform:rotate(90deg); /* IE 9 */
+        -moz-transform:rotate(90deg); /* Firefox */
+        -webkit-transform:rotate(90deg); /* Safari and Chrome */
+        -o-transform:rotate(90deg); /* Opera */
+      }
+
+      &:hover {
+        padding-right: 3.3rem;
+      }
+    }
+  }
 }
 
 .section__page--error {
