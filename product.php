@@ -100,38 +100,6 @@
 
 ?>
 
-<section class="section--products section--white">
-	<div class="container">
-		<h1>Άλλα προϊόντα</h1>
-		<div class="row">
-
-<!--  Randomly fetch 3 products --> 
-
-		<?php 
-		
-		$sql1="SELECT * FROM product WHERE NOT prID='".$id."' ORDER BY RAND()";
-
-		if ($result = $connection->query($sql1)) {			
-			for ($i=0; $i < 3 ; $i++) {
-				$line = $result->fetch_assoc(); 
-		?>
-
-			<div class="column one-third">
-				<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
-			</div>
-
-		<?php	
-			}
-
-		$result->close();
-		} ?>
-
-		</div>
-		<a href="/#products" class="btn btn--outlined">Όλα τα προϊόντα</a>
-	</div>
-</section>
-
-
 <!--   Recipes with the selected product --> 
 
 	<?php 
@@ -212,12 +180,43 @@
 	</div>
 </section>		
 
-	§<?php	
+	<?php	
 			}
 
 		$result->close();
 		} 
 		?>
+
+<section class="section--products section--white">
+	<div class="container">
+		<h1>Άλλα προϊόντα</h1>
+		<div class="row">
+
+<!--  Randomly fetch 3 products --> 
+
+		<?php 
+		
+		$sql1="SELECT * FROM product WHERE NOT prID='".$id."' ORDER BY RAND()";
+
+		if ($result = $connection->query($sql1)) {			
+			for ($i=0; $i < 3 ; $i++) {
+				$line = $result->fetch_assoc(); 
+		?>
+
+			<div class="column one-third">
+				<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
+			</div>
+
+		<?php	
+			}
+
+		$result->close();
+		} ?>
+
+		</div>
+		<a href="/#products" class="btn btn--outlined">Όλα τα προϊόντα</a>
+	</div>
+</section>
 <footer class="footer--one">
 	<div class="container">
 		<div class="row">
