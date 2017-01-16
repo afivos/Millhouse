@@ -62,11 +62,7 @@
 
 <section class="section--products section--white">
 	<div class="container">
-<<<<<<< Updated upstream
-		<h1>Νιφάδες Βρώμης</h1>
-=======
 		<h1>Προϊόντα Βρώμης</h1>
->>>>>>> Stashed changes
 		<p class="description">Προϊόντα με βάση τις νιφάδες βρώμης, ξεχωριστά για τις ευεργετικές τους επιδράσεις στον οργανισμό.</p>
 		<div class="row">
 
