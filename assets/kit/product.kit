@@ -13,6 +13,7 @@
 		$prID = $line['prID'];
 
 		$recNumber = $line['recNumber'];
+		$category = $line['category'];
 
     	do  {
 
@@ -89,47 +90,12 @@
 
 	<?php 
 	
-	$sql2="SELECT * FROM recipe WHERE prID=$prID ORDER BY RAND()";
+	$sql1="SELECT * FROM recipe WHERE prID=".$id." ORDER BY RAND()";
 
-	if ($result = $connection->query($sql2)) {
+	if ($result = $connection->query($sql1)) {
 
-			if ($recNumber == '0') {}		
+			if ($recNumber == 0) {}		
 
-			elseif ($recNumber == '1') {
-	?>
-
-<section class="section--recipes section--subtle">
-	<div class="container">
-		<img src="assets/img/spoon-fork.svg">
-		<h1>Συνταγές με <?php echo $prName;?></h1>
-		<div class="row grid--recipes">
-
-	<?php
-				for ($i=0; $i < 1 ; $i++) {
-				$line = $result->fetch_assoc(); 
-	?>
-				<div class="column half">
-				<div class="tiles">
-					<a href="recipe?recipeID=<?php echo $line['recipeID'];?>" class="tile">
-						<img src="assets/img/<?php echo $line['image'];?>">
-						<div class="details">
-							<h2><?php echo $line['name'];?></h2>
-							<p><?php echo $line['description'];?></p>
-						</div>
-					</a>
-				</div>
-			</div>
-	<?php
-				}
-	?>
-
-		</div>
-		<a href="recipes" class="btn btn--outlined">Όλες οι συνταγές</a>
-	</div>
-</section>
-	
-	<?php
-			}
 			else {
 	?>
 
@@ -141,7 +107,7 @@
 
 	<?php
 
-				for ($i=0; $i < 2 ; $i++) {
+				for ($i=0; $i < $recNumber ; $i++) {
 				$line = $result->fetch_assoc(); 
 	?>
 				<div class="column half">
@@ -174,18 +140,19 @@
 
 <section class="section--products section--white">
 	<div class="container">
-		<h1>Άλλα προϊόντα</h1>
+		<h1>Άλλα προϊόντα της κατηγορίας</h1>
 		<div class="row">
 
 <!--  Randomly fetch 3 products --> 
 
 		<?php 
 		
-		$sql1="SELECT * FROM product WHERE NOT prID='".$id."' ORDER BY RAND()";
+		$sql2="SELECT * FROM product WHERE NOT prID='".$id."' AND category='".$category."'";
 
-		if ($result = $connection->query($sql1)) {			
-			for ($i=0; $i < 3 ; $i++) {
-				$line = $result->fetch_assoc(); 
+		if ($result = $connection->query($sql2)) {
+			$line = $result->fetch_assoc();
+				do  {
+
 		?>
 
 			<div class="column one-third">
@@ -193,10 +160,10 @@
 			</div>
 
 		<?php	
-			}
-
+				} while ($line = $result->fetch_assoc());
+		}
 		$result->close();
-		} ?>
+		 ?>
 
 		</div>
 		<a href="/#products" class="btn btn--outlined">Όλα τα προϊόντα</a>
