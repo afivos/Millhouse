@@ -32,8 +32,8 @@
 
 <section class="section--products section--colored" id="products">
 	<div class="container">
-		<h1>Οικογένεια Crunchy Oat</h1>
-		<p class="description">Τα προϊόντα Crunchy Oat αποτελλούν την Premium σειρά Millhouse, καθώς διαθέτουν μοναδική ποιότητα, μοντέρνες συνταγές και πολύ θρεπτικά συστατικά. </p>
+		<h1>Crunchy Oat</h1>
+		<p class="description">Τα προϊόντα Crunchy Oat αποτελούν την Premium σειρά Millhouse, καθώς διαθέτουν μοναδική ποιότητα, μοντέρνες συνταγές και πολύ θρεπτικά συστατικά. </p>
 		<div class="row">
 
 		<!--  result fetch from product category "crunchy"-->
@@ -62,7 +62,11 @@
 
 <section class="section--products section--white">
 	<div class="container">
+<<<<<<< Updated upstream
 		<h1>Νιφάδες Βρώμης</h1>
+=======
+		<h1>Προϊόντα Βρώμης</h1>
+>>>>>>> Stashed changes
 		<p class="description">Προϊόντα με βάση τις νιφάδες βρώμης, ξεχωριστά για τις ευεργετικές τους επιδράσεις στον οργανισμό.</p>
 		<div class="row">
 
@@ -92,7 +96,7 @@
 
 <section class="section--products section--photo" data-parallax="scroll" data-image-src="assets/img/light-diet.jpg" data-speed="0.5">
 	<div class="container">
-		<h1>Οικογένεια Light &amp; Diet</h1>
+		<h1>Light &amp; Diet</h1>
 		<p class="description">Τα προϊόντα Light &amp; Diet έχουν σαν βάση τις νιφάδες δημητριακών ολικής άλεσης, οι οποίες βοηθούν στη δημιουργία μια όμορφης σιλουέτας.</p>
 		<div class="row">
 
@@ -122,7 +126,7 @@
 
 <section class="section--products section--colored">
 	<div class="container">
-		<h1>Άλλα προϊόντα</h1>
+		<h1>Για όλη την οικογένεια</h1>
 		<p class="description">Πολλές διαφορετικές γεύσεις για όλη την οικογένεια, ιδανικά για τα παιδιά. </p>
 		<div class="row">
 
@@ -151,8 +155,8 @@
 
 <section class="section--products section--white">
 	<div class="container">
-		<h1>Μπάρες</h1>
-		<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nostrum blanditiis velit, quia repellat minima amet, libero.</p>
+		<h1>Μπάρες δημητριακών</h1>
+		<p class="description">Δυναμωτικές, υγιεινές και χορταστικές, οι μπάρες δημητριακών Millhouse είναι ιδανικές για κάθε στιγμή της ημέρας διαθέτοντας λίγες θερμίδες και πολύ ενέργεια.</p>
 		<div class="row">
 
 		<!-- result fetch from product category "bars" -->

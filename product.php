@@ -38,7 +38,7 @@
 		    </nav>
 		</div>
 
-        <h1><?php echo $line['name']?> Millhouse</h1>
+        <h1>Millhouse <?php echo $line['name']?></h1>
         <p><?php echo $line['description']?></p>
 		<img src="assets/img/<?php echo $line['image']?>" class="product__image">
 	</div>
@@ -86,7 +86,7 @@
 			</div>
 			<div class="column five hidden-sm">
 				<div class="round">
-					<img src="assets/img/<?php echo $line['imageTip']?>">
+					<img src="assets/img/imgtip/<?php echo $line['imageTip']?>">
 				</div>
 			</div>
 		</div>
