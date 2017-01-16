@@ -126,13 +126,13 @@
 		<p class="description">Πολλές διαφορετικές γεύσεις για όλη την οικογένεια, ιδανικά για τα παιδιά. </p>
 		<div class="row">
 
-		<!-- result fetch from product category "other" -->
+		<!-- result fetch from product category "family" -->
 
 			<?php
 				if ($result = $connection->query($sql)) {
 					$line = $result->fetch_assoc();
 						do {
-							if ($line['category'] == "other") {
+							if ($line['category'] == "family") {
 								?>
 			<div class="column one-third">
 				<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
@@ -151,20 +151,20 @@
 
 <section class="section--products section--white">
 	<div class="container">
-		<h1>Μπάρες δημητριακών</h1>
-		<p class="description">Δυναμωτικές, υγιεινές και χορταστικές, οι μπάρες δημητριακών Millhouse είναι ιδανικές για κάθε στιγμή της ημέρας διαθέτοντας λίγες θερμίδες και πολύ ενέργεια.</p>
+		<h1>Παιδική σειρά</h1>
+		<p class="description">Θρεπτικά προϊόντα κατάλληλη για παιδιά, με πολλές βιταμίνες για μια σωστή και ισορροπημένη διατροφή.</p>
 		<div class="row">
 
-		<!-- result fetch from product category "bars" -->
+		<!-- result fetch from product category "kids" -->
 
 			<?php
 				if ($result = $connection->query($sql)) {
 					$line = $result->fetch_assoc();
 						do {
-							if ($line['category'] == "bars") {
+							if ($line['category'] == "kids") {
 								?>
 			<div class="column one-third">
-				<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--box__short"><p><?php echo $line['name']?></p></a>
+				<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
 			</div>
 
 			<?php
