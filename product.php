@@ -105,7 +105,7 @@
 
 	<?php 
 	
-	$sql1="SELECT * FROM recipe WHERE prID=".$id." ORDER BY RAND()";
+	$sql1="SELECT * FROM recipe WHERE prID=".$id;
 
 	if ($result = $connection->query($sql1)) {
 

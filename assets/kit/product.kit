@@ -19,7 +19,7 @@
 
 ?>
 
-<div class="section__page section__page--product" data-parallax="scroll" data-image-src="assets/img/grass.jpg">
+<div class="section__page section__page--product" data-parallax="scroll" data-image-src="assets/img/table.jpg">
 	<div class="container" data-speed="0.5">
 
 		<!-- @import "navbar" -->
@@ -90,7 +90,7 @@
 
 	<?php 
 	
-	$sql1="SELECT * FROM recipe WHERE prID=".$id." ORDER BY RAND()";
+	$sql1="SELECT * FROM recipe WHERE prID=".$id;
 
 	if ($result = $connection->query($sql1)) {
 
