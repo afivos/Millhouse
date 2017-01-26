@@ -19,7 +19,7 @@
 
 ?>
 
-<div class="section__page section__page--product" data-parallax="scroll" data-image-src="assets/img/grass.jpg">
+<div class="section__page section__page--product" data-parallax="scroll" data-image-src="assets/img/table.jpg">
 	<div class="container" data-speed="0.5">
 
 		<div class="navbar">
