@@ -21,6 +21,7 @@
 		            <li><a href="recipes">Συνταγές</a></li>
 		            <li><a href="about.html">Σχετικά με εμάς</a></li>
 		            <li><a href="contact.html">Επικοινωνία</a></li>
+		            <li><a href="en/"><img src="assets/img/en-flag.png"></a></li>
 		        </ul>
 		    </nav>
 		</div>
@@ -123,7 +124,7 @@
 <section class="section--products section--colored">
 	<div class="container">
 		<h1>Για όλη την οικογένεια</h1>
-		<p class="description">Πολλές διαφορετικές γεύσεις για όλη την οικογένεια, ιδανικά για τα παιδιά. </p>
+		<p class="description">Πολλές διαφορετικές γεύσεις για όλη την οικογένεια.</p>
 		<div class="row">
 
 		<!-- result fetch from product category "family" -->
@@ -149,7 +150,7 @@
 	</div>
 </section>
 
-<section class="section--products section--white">
+<section class="section--products section--photo" data-parallax="scroll" data-image-src="assets/img/boy.jpg" data-speed="0.5">
 	<div class="container">
 		<h1>Παιδική σειρά</h1>
 		<p class="description">Θρεπτικά προϊόντα κατάλληλη για παιδιά, με πολλές βιταμίνες για μια σωστή και ισορροπημένη διατροφή.</p>
@@ -186,7 +187,7 @@
 			</div>
 			<div class="column one-fourth">
 				<ul>
-					<li><a href="/#products--1">Προϊόντα</a></li>
+					<li><a href="/#products">Προϊόντα</a></li>
 					<li><a href="recipes">Συνταγές</a></li>
 				</ul>
 			</div>
