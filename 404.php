@@ -65,12 +65,13 @@
 	            <li><a href="recipes">Συνταγές</a></li>
 	            <li><a href="about.html">Σχετικά με εμάς</a></li>
 	            <li><a href="contact.html">Επικοινωνία</a></li>
+	            <li><a href="en/"><img src="assets/img/en-flag.png"></a></li>
 	        </ul>
 	    </nav>
 	</div>
 
 		<h1>Error 404!</h1>
-		<h2>Λυπούμαστε. Η σελίδα που προσαθήσατε να δείτε δεν υπάρχει (πια). Δοκιμάστε να ξεκινήσετε από την <a href="/">αρχική σελίδα</a>.</h3>
+		<h2>Λυπούμαστε. Η σελίδα που προσαθήσατε να δείτε δεν υπάρχει (πια). Δοκιμάστε να ξεκινήσετε από την <a href="/">αρχική σελίδα</a>.</h2>
 
 	</div>
 </div>
@@ -83,7 +84,7 @@
 			</div>
 			<div class="column one-fourth">
 				<ul>
-					<li><a href="/#products--1">Προϊόντα</a></li>
+					<li><a href="/#products">Προϊόντα</a></li>
 					<li><a href="recipes">Συνταγές</a></li>
 				</ul>
 			</div>
