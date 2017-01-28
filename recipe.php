@@ -29,6 +29,7 @@
 		            <li><a href="recipes">Συνταγές</a></li>
 		            <li><a href="about.html">Σχετικά με εμάς</a></li>
 		            <li><a href="contact.html">Επικοινωνία</a></li>
+		            <li><a href="en/"><img src="assets/img/en-flag.png"></a></li>
 		        </ul>
 		    </nav>
 		</div>
@@ -164,7 +165,7 @@ s.setAttribute('data-timestamp', +new Date());
 			</div>
 			<div class="column one-fourth">
 				<ul>
-					<li><a href="/#products--1">Προϊόντα</a></li>
+					<li><a href="/#products">Προϊόντα</a></li>
 					<li><a href="recipes">Συνταγές</a></li>
 				</ul>
 			</div>

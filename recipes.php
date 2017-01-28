@@ -22,12 +22,13 @@
 		            <li><a href="recipes">Συνταγές</a></li>
 		            <li><a href="about.html">Σχετικά με εμάς</a></li>
 		            <li><a href="contact.html">Επικοινωνία</a></li>
+		            <li><a href="en/"><img src="assets/img/en-flag.png"></a></li>
 		        </ul>
 		    </nav>
 		</div>
 		
         <h1>Οι συνταγές μας</h1>
-        <p class="description">Ανακαλύψτε τη δύναμη των δημητριακών Millhouse μέσα από πεντανόστιμες, απολαυστικές και υγιεινές συνταγές δημιουργημένες από εμάς. Φτιάξτε αλμυρά πιάτα, γλυκές λιχουδιές και ροφήματα για όλες τις ώρες.</p>
+        <p class="description">Ανακαλύψτε τη δύναμη των δημητριακών Millhouse μέσα από πεντανόστιμες, απολαυστικές και υγιεινές συνταγές δημιουργημένες αποκλειστικά από τους chef μας. Φτιάξτε αλμυρά πιάτα, γλυκές λιχουδιές και ροφήματα για όλες τις ώρες.</p>
 
 		<a href="#recipes" class="btn btn-sm btn--outlined">Γλυκές συνταγές</a>
 		<a href="#drinks" class="btn btn-sm btn--outlined">Ροφήματα</a>
@@ -167,7 +168,7 @@
 			</div>
 			<div class="column one-fourth">
 				<ul>
-					<li><a href="/#products--1">Προϊόντα</a></li>
+					<li><a href="/#products">Προϊόντα</a></li>
 					<li><a href="recipes">Συνταγές</a></li>
 				</ul>
 			</div>
