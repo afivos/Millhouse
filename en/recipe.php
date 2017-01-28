@@ -17,7 +17,7 @@
 	<div class="container">
 
 		<div class="navbar">
-		    <a href="/en"><img class="logo" src="../assets/img/logo-recipes.svg"></a>
+		    <a href="/en"><img class="logo" src="../assets/img/logo-recipes-english.svg"></a>
 		    <div class="navIcon visible-sm">
 		        <div class="naviconUpper"></div>
 		        <div class="innerNavicon"></div>
