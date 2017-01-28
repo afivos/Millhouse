@@ -1,0 +1,188 @@
+<?php
+
+  include('connection.php');
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Millouse Cereals</title>
+    <meta name="description" content="">
+
+    <!-- Fonts, then styles -->
+    <link rel="stylesheet" href="assets/fonts/Graublau.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- jQuery first, then all JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="assets/js/min/scripts-min.js"></script>
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/min/parallax.min.js"></script>
+
+    <script>
+        $(function(){
+            $('a').each(function(){
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-86111333-1', 'auto');
+     ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+
+<div class="section__page section__page--about">
+	<div class="container">
+
+		<div class="navbar">
+		    <a href="/en"><img class="logo" src="../assets/img/logo.svg"></a>
+		    <div class="navIcon visible-sm">
+		        <div class="naviconUpper"></div>
+		        <div class="innerNavicon"></div>
+		        <div class="naviconLower"></div>
+		    </div>
+		    <nav>
+		        <ul>
+		            <li><a href="/en/#products">Products</a></li>
+		            <li><a href="recipes">Recipes</a></li>
+		            <li><a href="about.html">About us</a></li>
+		            <li><a href="contact.html">Contact</a></li>
+		            <li><a href="../"><img src="../assets/img/gr-flag.png"></a></li>
+		        </ul>
+		    </nav>
+		</div>
+
+		<!-- Video -->
+		<!-- http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video -->
+		<video poster="../assets/img/screenshot2.jpg" id="bgvid" playsinline autoplay muted loop>
+			<!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+			<!--<source src="../assets/img/video.webm" type="video/webm">-->
+			<source src="../assets/img/video.mp4" type="video/mp4">
+		</video>
+
+		<h1>"Quality: the first and most important factor for the launch of every new Millhouse product."</h1>
+	    <div id="arrow-down">
+	      <a href="#section--1" class="button-down"></a>
+	    </div>
+		
+	</div>
+</div>
+
+<!--[if lt IE 9]>
+<script>
+	document.createElement('video');
+</script>
+<![endif]-->
+
+<script>
+var vid = document.getElementById("bgvid");
+
+function vidFade() {
+  vid.classList.add("stopfade");
+}
+
+vid.addEventListener('ended', function()
+{
+// only functional if "loop" is removed 
+vid.pause();
+// to capture IE10
+vidFade();
+}); 
+
+
+pauseButton.addEventListener("click", function() {
+  vid.classList.toggle("stopfade");
+  if (vid.paused) {
+    vid.play();
+    pauseButton.innerHTML = "Pause";
+  } else {
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+  }
+})
+</script>
+
+<section class="section--colored" id="section--1" style="background: rgba(0,120,80,0.8)">
+	<div class="container">
+		<h1>About us</h1>
+
+		<p>The Millhouse products are one of the registered brands of the company <a href="http://introfex.gr" target="_blank"> INTROFEX Ltd.</a>, which today is considered one of the biggest Greek food packaging companies.</p>
+
+		<p>The brand is indissociably linked to the performance and development of <a href="http://introfex.gr" target="_blank"> INTROFEX Ltd.</a>, as in 1996 the first Millhouse product was presented to the Greek market and slowly, following closely the philosophy of excellent quality and good price ratio, the product range has been enriched and continues to be enriched with innovative recipes, maintaining low and competitive prices, so that every Greek family can enjoy the unique taste and quality of the products.</p>
+
+		<p>The consequence that has been shown by the company towards the very difficult economic crisis that Greece is experiencing, is reflected in the philosophy regarding Millhouse products. The primary factor taken into consideration before placing any product in the Greek market is the combination of excellent quality with low price. </p>
+
+		<p>So, faithfully following this philosophy, the mission is the establishment of Millhouse as the most recognizable Greek cereal brand.</p>
+
+	</div>
+</section>
+
+<footer class="footer--one">
+	<div class="container">
+		<div class="row">
+			<div class="column one-fourth">
+				<a href="/"><img src="../assets/img/logo_bw.svg" class="logo"></a>
+			</div>
+			<div class="column one-fourth">
+				<ul>
+					<li><a href="/en/#products">Products</a></li>
+					<li><a href="recipes">Recipes</a></li>
+				</ul>
+			</div>
+			<div class="column one-fourth">
+				<ul>
+					<li><a href="about.html">About us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="column one-fourth">
+				<ul class="social-icons">
+					<li><a href="http://facebook.com/millhouse.cereals" target="_blank"><img src="../assets/img/facebook.svg"></a></li>
+					<li><a href="http://instagram.com/millhousecereals" target="_blank"><img src="../assets/img/instagram.svg"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<footer class="footer--two" style="background: #383838; color: white; margin: 0;">
+	<div class="container">
+		<p class="text-center">Copyright &copy; <script>new Date().getFullYear()>2014&&document.write(""+new Date().getFullYear());</script> <a href="http://introfex.gr" target="_blank">Introfex LTD</a>. All rights reserved. Handmade with <span style="color:#f24242;">♥</span> by <a href="http://afivos.com" target="_blank">Fivos Avgerinos</a>.</p>
+	</div>
+</footer>
+
+<script src="assets/js/classie.js"></script>
+<script src="assets/js/demo1.js"></script>
+
+<script>
+$(".navIcon").click(function() {
+  $(".naviconUpper").toggleClass("on");
+  $(".innerNavicon").toggleClass("on");
+  $(".naviconLower").toggleClass("on");
+  $("body").toggleClass("on");
+  $("h1").toggleClass("on");
+  $(".navIcon").toggleClass("on");
+  $(".section__page").toggleClass("on");
+});
+</script>
+
+</body>
+</html>
