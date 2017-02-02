@@ -1,6 +1,6 @@
 <?php
 
-	$database = "millhouse"; 
+	$database = "millhouseEnglish"; 
 	$hostname = "localhost"; 
 	$username = "root";
 	$password = "root"; 
