@@ -213,8 +213,8 @@
 	</div>
 </footer>
 
-<script src="../assets/js/classie.js"></script>
-<script src="../assets/js/demo1.js"></script>
+<script src="assets/js/classie.js"></script>
+<script src="assets/js/demo1.js"></script>
 
 <script>
 $(".navIcon").click(function() {
