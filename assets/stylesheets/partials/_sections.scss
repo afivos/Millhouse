@@ -170,7 +170,7 @@ section {
 		}
 	}
 
-	a {
+	a:not(.btn) {
 		height: 45rem;
 		display: block;
 
