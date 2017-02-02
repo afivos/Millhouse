@@ -29,7 +29,7 @@
 		            <li><a href="recipes">Recipes</a></li>
 		            <li><a href="about.html">About us</a></li>
 		            <li><a href="contact.html">Contact</a></li>
-		            <li><a href="../"><img src="../assets/img/gr-flag.png"></a></li>
+		            <li><a href="../"><img src="../assets/img/greece.svg" class="flag"></a></li>
 		        </ul>
 		    </nav>
 		</div>
@@ -191,8 +191,8 @@ s.setAttribute('data-timestamp', +new Date());
 	</div>
 </footer>
 
-<script src="assets/js/classie.js"></script>
-<script src="assets/js/demo1.js"></script>
+<script src="../assets/js/classie.js"></script>
+<script src="../assets/js/demo1.js"></script>
 
 <script>
 $(".navIcon").click(function() {
