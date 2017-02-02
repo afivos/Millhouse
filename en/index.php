@@ -21,7 +21,7 @@
 		            <li><a href="recipes">Recipes</a></li>
 		            <li><a href="about.html">About us</a></li>
 		            <li><a href="contact.html">Contact</a></li>
-		            <li><a href="../"><img src="../assets/img/greece.svg" class="flag"></a></li>
+		            <!--<li><a href="../"><img src="../assets/img/greece.svg" class="flag"></a></li>-->
 		        </ul>
 		    </nav>
 		</div>

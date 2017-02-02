@@ -22,7 +22,7 @@
 		            <li><a href="recipes">Συνταγές</a></li>
 		            <li><a href="about.html">Σχετικά με εμάς</a></li>
 		            <li><a href="contact.html">Επικοινωνία</a></li>
-		            <li><a href="en/"><img src="assets/img/united-kingdom.svg" class="flag"></a></li>
+		            <!--<li><a href="en/"><img src="assets/img/united-kingdom.svg" class="flag"></a></li>-->
 		        </ul>
 		    </nav>
 		</div>
