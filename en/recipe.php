@@ -90,7 +90,7 @@
 
 		?>
 
-<h1 class="text-center">Αφήστε μας τα σχόλιά σας</h1>
+<h1 class="text-center">Leave us your comments</h1>
 <div id="disqus_thread"></div>
 <script>
 
@@ -192,8 +192,8 @@ s.setAttribute('data-timestamp', +new Date());
 	</div>
 </footer>
 
-<script src="assets/js/classie.js"></script>
-<script src="assets/js/demo1.js"></script>
+<script src="../assets/js/classie.js"></script>
+<script src="../assets/js/demo1.js"></script>
 
 <script>
 $(".navIcon").click(function() {
