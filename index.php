@@ -18,7 +18,7 @@
 		    <nav>
 		        <ul>
 		            <li><a href="/#products">Προϊόντα</a></li>
-		            <li><a href="recipes">Συνταγές</a></li>
+		            <li><a href="recipes.php">Συνταγές</a></li>
 		            <li><a href="about.html">Σχετικά με εμάς</a></li>
 		            <li><a href="contact.html">Επικοινωνία</a></li>
 		            <!--<li><a href="en/"><img src="assets/img/united-kingdom.svg" class="flag"></a></li>-->
@@ -47,7 +47,7 @@
 								?>
 
 			<div class="column one-third">
-				<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image'];?>" class="img--box__short"><p><?php echo $line['name'];?></p></a>
+				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image'];?>" class="img--box__short"><p><?php echo $line['name'];?></p></a>
 			</div>
 
 			<?php
@@ -77,7 +77,7 @@
 								?>
 
 			<div class="column one-third">
-				<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
+				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
 			</div>
 
 			<?php
@@ -107,7 +107,7 @@
 								?>
 
 			<div class="column one-third">
-				<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--box__tall"><p><?php echo $line['name']?></p></a>
+				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--box__tall"><p><?php echo $line['name']?></p></a>
 			</div>
 
 			<?php
@@ -136,7 +136,7 @@
 							if ($line['category'] == "family") {
 								?>
 			<div class="column one-third">
-				<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
+				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
 			</div>
 
 			<?php
@@ -165,7 +165,7 @@
 							if ($line['category'] == "kids") {
 								?>
 			<div class="column one-third">
-				<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
+				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
 			</div>
 
 			<?php
@@ -188,7 +188,7 @@
 			<div class="column one-fourth">
 				<ul>
 					<li><a href="/#products">Προϊόντα</a></li>
-					<li><a href="recipes">Συνταγές</a></li>
+					<li><a href="recipes.php">Συνταγές</a></li>
 				</ul>
 			</div>
 			<div class="column one-fourth">

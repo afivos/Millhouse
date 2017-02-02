@@ -26,7 +26,7 @@
 		    <nav>
 		        <ul>
 		            <li><a href="/#products">Προϊόντα</a></li>
-		            <li><a href="recipes">Συνταγές</a></li>
+		            <li><a href="recipes.php">Συνταγές</a></li>
 		            <li><a href="about.html">Σχετικά με εμάς</a></li>
 		            <li><a href="contact.html">Επικοινωνία</a></li>
 		            <!--<li><a href="en/"><img src="assets/img/united-kingdom.svg" class="flag"></a></li>-->
@@ -61,7 +61,7 @@
 			</div>
 		</div>	
 
-		<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['prImage'];?>" class="product--used"></a>
+		<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['prImage'];?>" class="product--used"></a>
 
 		<hr class="hr--recipe">
 
@@ -69,7 +69,7 @@
 			<div class="column two-fifths">
 				<h2>Συστατικά</h2>
 				<ul>
-					<li><a href="product?prID=<?php echo $line['prID'];?>"><strong><?php echo $line['productGrams'];?> γρ. <?php echo $line['product'];?> Millhouse</strong></a></li>
+					<li><a href="product.php?prID=<?php echo $line['prID'];?>"><strong><?php echo $line['productGrams'];?> γρ. <?php echo $line['product'];?> Millhouse</strong></a></li>
 					<br>
 					<!-- Fetching ingredients -->
 					<?php echo $line['ingredients'];?>
@@ -135,7 +135,7 @@ s.setAttribute('data-timestamp', +new Date());
 		?>
 			<div class="column half">
 				<div class="tiles">
-					<a href="recipe?recipeID=<?php echo $line['recipeID'];?>" class="tile">
+					<a href="recipe.php?recipeID=<?php echo $line['recipeID'];?>" class="tile">
 						<img src="assets/img/<?php echo $line['image'];?>">
 						<div class="details">
 							<h2><?php echo $line['name'];?></h2>
@@ -152,7 +152,7 @@ s.setAttribute('data-timestamp', +new Date());
 		} ?>
 
 		</div>
-		<a href="recipes" class="btn btn--outlined">Όλες οι συνταγές</a>
+		<a href="recipes.php" class="btn btn--outlined">Όλες οι συνταγές</a>
 	</div>
 </section>
 
@@ -167,7 +167,7 @@ s.setAttribute('data-timestamp', +new Date());
 			<div class="column one-fourth">
 				<ul>
 					<li><a href="/#products">Προϊόντα</a></li>
-					<li><a href="recipes">Συνταγές</a></li>
+					<li><a href="recipes.php">Συνταγές</a></li>
 				</ul>
 			</div>
 			<div class="column one-fourth">
