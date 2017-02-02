@@ -163,6 +163,20 @@ section {
 
 	a p {
 		font-family: $font-heading !important;
+		//display: block;
+
+		@media (max-width: $breakpoint) {
+			font-size: 90%;
+		}
+	}
+
+	a {
+		height: 45rem;
+		display: block;
+
+		@media (max-width: $breakpoint) {
+			//height: 42.5rem;
+		}
 	}
 }
 
