@@ -16,14 +16,14 @@
     <meta name="description" content="">
 
     <!-- Fonts, then styles -->
-    <link rel="stylesheet" href="assets/fonts/Graublau.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="../assets/fonts/Graublau.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
 
     <!-- jQuery first, then all JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="assets/js/min/scripts-min.js"></script>
-    <script src="assets/js/modernizr.custom.js"></script>
-    <script src="assets/js/min/parallax.min.js"></script>
+    <script src="../assets/js/min/scripts-min.js"></script>
+    <script src="../assets/js/modernizr.custom.js"></script>
+    <script src="../assets/js/min/parallax.min.js"></script>
 
     <script>
         $(function(){
