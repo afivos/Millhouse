@@ -90,6 +90,7 @@
 
 		?>
 
+<h1 class="text-center">Αφήστε μας τα σχόλιά σας</h1>
 <div id="disqus_thread"></div>
 <script>
 
