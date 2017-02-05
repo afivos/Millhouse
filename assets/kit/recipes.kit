@@ -2,7 +2,7 @@
 
   include('assets/php/head.php');
 
-  $sql="SELECT * FROM recipe"; 
+  $sql="SELECT * FROM recipe ORDER BY recipeID DESC"; 
 
 ?>
 
