@@ -70,7 +70,7 @@
 				<div class="circle"><?php echo $line['alati']?></div> g
             </div>
             <div class="two columns">
-				<h4>Protein</h4>
+				<h4>Proteins</h4>
 				<div class="circle"><?php echo $line['protein']?></div> g
             </div>
         </div>
@@ -156,7 +156,7 @@
 
 <section class="section--products section--white">
 	<div class="container">
-		<h1>Other products of the category</h1>
+		<h1>Other from the category</h1>
 		<div class="row">
 
 <!--  Randomly fetch 3 products --> 
@@ -172,7 +172,7 @@
 		?>
 
 			<div class="column one-third">
-				<a href="product?prID=<?php echo $line['prID'];?>"><img src="../assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
+				<a href="product?prID=<?php echo $line['prID'];?>"><img src="../assets/img/<?php echo $line['image']?>" class="img--box__short"><p><?php echo $line['name']?></p></a>
 			</div>
 
 		<?php	
@@ -182,7 +182,8 @@
 		 ?>
 
 		</div>
-		<a href="/en/#products" class="btn btn--outlined">See all products</a>
+		<a href="/#products" class="btn btn--outlined">See all products</a>
+
 	</div>
 </section>
 <footer class="footer--one">

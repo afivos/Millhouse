@@ -5,7 +5,7 @@
 
 ?>
 
-<div class="section__page section__page--index" data-parallax="scroll" data-image-src="../assets/img/girl.jpg" data-speed="0.5">
+<div class="section__page section__page--index" data-parallax="scroll" data-image-src="../assets/img/woman.jpg" data-speed="0.5">
 	<div class="container">
 
 		<div class="navbar">
@@ -26,7 +26,8 @@
 		    </nav>
 		</div>
 
-        <h1>For two decades, we are the trusted choice in Greece, so that our kids grow up with the most healthy and nutricious cereals.</h1>
+        <h1>Authenticity and Quality. <br>
+        For two decades, the biggest Greek cereal brand, at the side of every family with respect to a healthy nutrition.</h1>
         <a href="#products" class="btn btn--filled">See our products</a>
 	</div>
 </div>
@@ -64,7 +65,7 @@
 <section class="section--products section--white">
 	<div class="container">
 		<h1>Oat Products</h1>
-		<p class="description">Products based in oat flakes, unique for their beneficial effects on the organism.</p>
+		<p class="description">Products based on oat flakes, unique for their beneficial effects on the body.</p>
 		<div class="row">
 
 		<!-- result fetch from product category "oat" -->
