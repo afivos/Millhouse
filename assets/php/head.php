@@ -13,7 +13,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>Millouse Cereals - Η ελληνική μάρκα δημητριακών</title>
-    <meta name="description" content="">
+    <meta name="description" content="Τα προϊόντα Millhouse αποτελούν ένα από τα κατοχυρωμένα brands της εταιρείας ΙΝΤΡΟΦΕΞ Ε.Π.Ε, η οποία θεωρείται σήμερα μια από τις μεγαλύτερες ελληνικές εταιρίες συσκευασίας τροφίμων.">
 
     <!-- Fonts, then styles -->
     <link rel="stylesheet" href="assets/fonts/Graublau.css">
