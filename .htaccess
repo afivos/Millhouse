@@ -1,0 +1,24 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www\.localhost:8888)(:80)? [NC]
+RewriteRule ^(.*) http://localhost:8888/$1 [R=301,L]
+DirectoryIndex index.php  
+ErrorDocument 404 http://localhost:8888/en/404    
+order deny,allow
+
+Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ /$1.php [L,QSA]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+## STOP REFERRER SPAM 
+RewriteCond %{HTTP_REFERER} semalt\.com [NC,OR] 
+RewriteCond %{HTTP_REFERER} buttons-for-website\.com [NC] 
+RewriteRule .* - [F]

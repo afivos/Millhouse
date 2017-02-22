@@ -5,7 +5,7 @@
 
 ?>
 
-<div class="section__page section__page--index" data-parallax="scroll" data-image-src="assets/img/girl.jpg" data-speed="0.5">
+<div class="section__page section__page--index" data-parallax="scroll" data-image-src="assets/img/family.jpg" data-speed="0.5">
 	<div class="container">
 
 		<div class="navbar">
@@ -18,15 +18,16 @@
 		    <nav>
 		        <ul>
 		            <li><a href="/#products">Προϊόντα</a></li>
-		            <li><a href="recipes.php">Συνταγές</a></li>
-		            <li><a href="about.html">Σχετικά με εμάς</a></li>
-		            <li><a href="contact.html">Επικοινωνία</a></li>
+		            <li><a href="recipes">Συνταγές</a></li>
+		            <li><a href="about">Σχετικά με εμάς</a></li>
+		            <li><a href="contact">Επικοινωνία</a></li>
 		            <!--<li><a href="en/"><img src="assets/img/united-kingdom.svg" class="flag"></a></li>-->
 		        </ul>
 		    </nav>
 		</div>
 
-        <h1>Εδώ και δύο δεκαετίες, μας εμπιστεύεστε ώστε τα παιδιά μας να μεγαλώνουν με τα πιο υγιεινά και θρεπτικά δημητριακά.</h1>
+        <h1>Αυθεντικά και Ποιοτικά.<br>
+        Εδώ και δύο δεκαετίες, η μεγαλύτερη ελληνική μάρκα δημητριακών, κοντά σε κάθε οικογένεια, με σεβασμό στην υγιεινή διατροφή.</h1>
         <a href="#products" class="btn btn--filled">Δείτε τα προϊόντα μας</a>
 	</div>
 </div>
@@ -47,7 +48,7 @@
 								?>
 
 			<div class="column one-third">
-				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image'];?>" class="img--box__short"><p><?php echo $line['name'];?></p></a>
+				<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image'];?>" class="img--box__short"><p><?php echo $line['name'];?></p></a>
 			</div>
 
 			<?php
@@ -77,7 +78,7 @@
 								?>
 
 			<div class="column one-third">
-				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
+				<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
 			</div>
 
 			<?php
@@ -107,7 +108,7 @@
 								?>
 
 			<div class="column one-third">
-				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--box__tall"><p><?php echo $line['name']?></p></a>
+				<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--box__tall"><p><?php echo $line['name']?></p></a>
 			</div>
 
 			<?php
@@ -136,7 +137,7 @@
 							if ($line['category'] == "family") {
 								?>
 			<div class="column one-third">
-				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
+				<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
 			</div>
 
 			<?php
@@ -165,7 +166,7 @@
 							if ($line['category'] == "kids") {
 								?>
 			<div class="column one-third">
-				<a href="product.php?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
+				<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
 			</div>
 
 			<?php
@@ -188,13 +189,13 @@
 			<div class="column one-fourth">
 				<ul>
 					<li><a href="/#products">Προϊόντα</a></li>
-					<li><a href="recipes.php">Συνταγές</a></li>
+					<li><a href="recipes">Συνταγές</a></li>
 				</ul>
 			</div>
 			<div class="column one-fourth">
 				<ul>
-					<li><a href="about.html">Σχετκά με εμάς</a></li>
-					<li><a href="contact.html">Επικοινωνία</a></li>
+					<li><a href="about">Σχετκά με εμάς</a></li>
+					<li><a href="contact">Επικοινωνία</a></li>
 				</ul>
 			</div>
 			<div class="column one-fourth">

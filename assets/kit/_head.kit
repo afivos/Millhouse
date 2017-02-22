@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Millouse Cereals</title>
+    <title>Millouse Cereals - Η ελληνική μάρκα δημητριακών</title>
     <meta name="description" content="">
 
     <!-- Fonts, then styles -->
