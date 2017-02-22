@@ -5,7 +5,7 @@
 
 ?>
 
-<div class="section__page section__page--index" data-parallax="scroll" data-image-src="assets/img/family.jpg" data-speed="0.5">
+<div class="section__page section__page--index" data-parallax="scroll" data-image-src="assets/img/woman.jpg" data-speed="0.5">
 	<div class="container">
 
 		<div class="navbar">
