@@ -1,6 +1,6 @@
 <?php
 
-  include('assets/php/head.php');
+  include('assets/php/head-en.php');
   $sql="SELECT * FROM recipe where recipeID=".$_GET['recipeID'];
 
   $id=$_GET['recipeID'];
@@ -17,7 +17,7 @@
 	<div class="container">
 
 		<div class="navbar">
-		    <a href="/en"><img class="logo" src="../assets/img/logo-recipes-english.svg"></a>
+		    <a href="/home"><img class="logo" src="assets/img/logo-recipes-english.svg"></a>
 		    <div class="navIcon visible-sm">
 		        <div class="naviconUpper"></div>
 		        <div class="innerNavicon"></div>
@@ -25,11 +25,11 @@
 		    </div>
 		    <nav>
 		        <ul>
-		            <li><a href="/en/index.php#products">Products</a></li>
-		            <li><a href="recipes-en.php">Recipes</a></li>
-		            <li><a href="about.html">About us</a></li>
-		            <li><a href="contact.html">Contact</a></li>
-		            <li><a href="../"><img src="../assets/img/greece.svg" class="flag"></a></li>
+		            <li><a href="/home#products">Products</a></li>
+		            <li><a href="recipes-en">Recipes</a></li>
+		            <li><a href="about-en">About us</a></li>
+		            <li><a href="contact-en">Contact</a></li>
+		            <li><a href="/"><img src="assets/img/greece.svg" class="flag"></a></li>
 		        </ul>
 		    </nav>
 		</div>
@@ -39,29 +39,29 @@
 	</div>
 </div>
 
-<div class="image--recipe" data-parallax="scroll" data-image-src="../assets/img/<?php echo $line['image'];?>" data-speed="0.5"></div>
+<div class="image--recipe" data-parallax="scroll" data-image-src="assets/img/<?php echo $line['image'];?>" data-speed="0.5"></div>
 
 <section class="section--recipe section--white">
 	<div class="container">
 		<div class="row text-center">
 			<div class="column one-third">
-				<img src="../assets/img/hourglass.svg" class="icon">
+				<img src="assets/img/hourglass.svg" class="icon">
 				<h4>Time</h4>
 				<p><?php echo $line['prepTime'];?>'</p>
 			</div>
 			<div class="column one-third">
-				<img src="../assets/img/chef.svg" class="icon">
+				<img src="assets/img/chef.svg" class="icon">
 				<h4>Difficulty</h4>
 				<p><?php echo $line['difficulty'];?></p>
 			</div>
 			<div class="column one-third">
-				<img src="../assets/img/utensils.svg" class="icon">
-				<h4>Portions / Units</h4>
+				<img src="assets/img/utensils.svg" class="icon">
+				<h4>Portions</h4>
 				<p><?php echo $line['serves'];?></p>
 			</div>
 		</div>	
 
-		<a href="product?prID=<?php echo $line['prID'];?>"><img src="../assets/img/<?php echo $line['prImage'];?>" class="product--used"></a>
+		<a href="product-en?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['prImage'];?>" class="product--used"></a>
 
 		<hr class="hr--recipe">
 
@@ -69,7 +69,7 @@
 			<div class="column two-fifths">
 				<h2>Ingredients</h2>
 				<ul>
-					<li><a href="product?prID=<?php echo $line['prID'];?>"><strong><?php echo $line['productGrams'];?> gr. <?php echo $line['product'];?> Millhouse</strong></a></li>
+					<li><a href="product-en?prID=<?php echo $line['prID'];?>"><strong><?php echo $line['productGrams'];?> gr. <?php echo $line['product'];?> Millhouse</strong></a></li>
 					<br>
 					<!-- Fetching ingredients -->
 					<?php echo $line['ingredients'];?>
@@ -118,7 +118,7 @@ s.setAttribute('data-timestamp', +new Date());
 
 <section class="section--recipes section--subtle">
 	<div class="container">
-		<img src="../assets/img/spoon-fork.svg" class="icon">
+		<img src="assets/img/spoon-fork.svg" class="icon">
 		<h1>Other recipes</h1>
 		<div class="row grid--recipes">
 
@@ -135,8 +135,8 @@ s.setAttribute('data-timestamp', +new Date());
 		?>
 			<div class="column half">
 				<div class="tiles">
-					<a href="recipe?recipeID=<?php echo $line['recipeID'];?>" class="tile">
-						<img src="../assets/img/<?php echo $line['image'];?>">
+					<a href="recipe-en?recipeID=<?php echo $line['recipeID'];?>" class="tile">
+						<img src="assets/img/<?php echo $line['image'];?>">
 						<div class="details">
 							<h2><?php echo $line['name'];?></h2>
 							<p><?php echo $line['description'];?></p>
@@ -152,7 +152,7 @@ s.setAttribute('data-timestamp', +new Date());
 		} ?>
 
 		</div>
-		<a href="recipes" class="btn btn--outlined">See all recipes</a>
+		<a href="recipes-en" class="btn btn--outlined">See all recipes</a>
 	</div>
 </section>
 
@@ -162,24 +162,24 @@ s.setAttribute('data-timestamp', +new Date());
 	<div class="container">
 		<div class="row">
 			<div class="column one-fourth">
-				<a href="/"><img src="../assets/img/logo_bw.svg" class="logo"></a>
+				<a href="/home"><img src="assets/img/logo_bw.svg" class="logo"></a>
 			</div>
 			<div class="column one-fourth">
 				<ul>
-					<li><a href="/en/index.php#products">Products</a></li>
-					<li><a href="recipes.php">Recipes</a></li>
+					<li><a href="/home#products">Products</a></li>
+					<li><a href="recipes-en">Recipes</a></li>
 				</ul>
 			</div>
 			<div class="column one-fourth">
 				<ul>
-					<li><a href="about.html">About us</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="about-en">About us</a></li>
+					<li><a href="contact-en">Contact</a></li>
 				</ul>
 			</div>
 			<div class="column one-fourth">
 				<ul class="social-icons">
-					<li><a href="http://facebook.com/millhouse.cereals" target="_blank"><img src="../assets/img/facebook.svg"></a></li>
-					<li><a href="http://instagram.com/millhousecereals" target="_blank"><img src="../assets/img/instagram.svg"></a></li>
+					<li><a href="http://facebook.com/millhouse.cereals" target="_blank"><img src="assets/img/facebook.svg"></a></li>
+					<li><a href="http://instagram.com/millhousecereals" target="_blank"><img src="assets/img/instagram.svg"></a></li>
 				</ul>
 			</div>
 		</div>
@@ -192,8 +192,8 @@ s.setAttribute('data-timestamp', +new Date());
 	</div>
 </footer>
 
-<script src="../assets/js/classie.js"></script>
-<script src="../assets/js/demo1.js"></script>
+<script src="assets/js/classie.js"></script>
+<script src="assets/js/demo1.js"></script>
 
 <script>
 $(".navIcon").click(function() {

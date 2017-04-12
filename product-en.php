@@ -1,6 +1,6 @@
 <?php
 
-  include('assets/php/head.php');
+  include('assets/php/head-en.php');
 
   $sql="SELECT * FROM product where prID=".$_GET['prID'];
 
@@ -23,7 +23,7 @@
 	<div class="container" data-speed="0.5">
 
 		<div class="navbar">
-		    <a href="/"><img class="logo" src="assets/img/logo.svg"></a>
+		    <a href="/home"><img class="logo" src="assets/img/logo.svg"></a>
 		    <div class="navIcon visible-sm">
 		        <div class="naviconUpper"></div>
 		        <div class="innerNavicon"></div>
@@ -31,11 +31,11 @@
 		    </div>
 		    <nav>
 		        <ul>
-		            <li><a href="/#products">Προϊόντα</a></li>
-		            <li><a href="recipes">Συνταγές</a></li>
-		            <li><a href="about">Σχετικά με εμάς</a></li>
-		            <li><a href="contact">Επικοινωνία</a></li>
-		            <li><a href="en/index.php"><img src="assets/img/united-kingdom.svg" class="flag"></a></li>
+		            <li><a href="/home#products">Products</a></li>
+		            <li><a href="recipes-en">Recipes</a></li>
+		            <li><a href="about-en">About us</a></li>
+		            <li><a href="contact-en">Contact</a></li>
+		            <li><a href="/"><img src="assets/img/greece.svg" class="flag"></a></li>
 		        </ul>
 		    </nav>
 		</div>
@@ -50,31 +50,31 @@
 	<div class="container">
         <div class="row">
             <div class="two columns">
-				<h4>Ενεργειακή Αξία</h4>
+				<h4>Energy</h4>
 				<div class="circle"><?php echo $line['enaks']?></div> kcal
             </div>
             <div class="two columns">
-				<h4>Λιπαρά</h4>
+				<h4>Fat</h4>
 				<div class="circle"><?php echo $line['lipara']?></div> g
             </div>
             <div class="two columns">
-				<h4>Κορεσμένα</h4>
+				<h4>Saturated</h4>
 				<div class="circle"><?php echo $line['koresmena']?></div> g
             </div>
             <div class="two columns">
-				<h4>Σάκχαρα</h4>
+				<h4>Sugar</h4>
 				<div class="circle"><?php echo $line['sakxara']?></div> g
             </div>
             <div class="two columns">
-				<h4>Αλάτι</h4>
+				<h4>Carbs</h4>
 				<div class="circle"><?php echo $line['alati']?></div> g
             </div>
             <div class="two columns">
-				<h4>Πρωτεΐνες</h4>
+				<h4>Proteins</h4>
 				<div class="circle"><?php echo $line['protein']?></div> g
             </div>
         </div>
-        <p class="note">&ast; Τα παραπάνω αντιστοιχούν σε μία μερίδα προϊόντος.</p>
+        <p class="note">&ast; The previous values correspond to one portion of the product.</p>
 	</div>	
 </section>
 
@@ -118,7 +118,7 @@
 <section class="section--recipes section--subtle">
 	<div class="container">
 		<img src="assets/img/spoon-fork.svg">
-		<h1>Συνταγές με <?php echo $prName;?></h1>
+		<h1>Recipes with <?php echo $prName;?></h1>
 		<div class="row grid--recipes">
 
 	<?php
@@ -128,7 +128,7 @@
 	?>
 				<div class="column half">
 				<div class="tiles">
-					<a href="recipe?recipeID=<?php echo $line['recipeID'];?>" class="tile">
+					<a href="recipe-en?recipeID=<?php echo $line['recipeID'];?>" class="tile">
 						<img src="assets/img/<?php echo $line['image'];?>">
 						<div class="details">
 							<h2><?php echo $line['name'];?></h2>
@@ -143,7 +143,7 @@
 	?>
 
 		</div>
-		<a href="recipes" class="btn btn--outlined">Όλες οι συνταγές</a>
+		<a href="recipes-en" class="btn btn--outlined">See all recipes</a>
 	</div>
 </section>		
 
@@ -156,7 +156,7 @@
 
 <section class="section--products section--white">
 	<div class="container">
-		<h1>Άλλα προϊόντα της κατηγορίας</h1>
+		<h1>Other from the category</h1>
 		<div class="row">
 
 <!--  Randomly fetch 3 products --> 
@@ -172,7 +172,7 @@
 		?>
 
 			<div class="column one-third">
-				<a href="product?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--box__short"><p><?php echo $line['name']?></p></a>
+				<a href="product-en?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--box__short"><p><?php echo $line['name']?></p></a>
 			</div>
 
 		<?php	
@@ -182,7 +182,7 @@
 		 ?>
 
 		</div>
-		<a href="/#products" class="btn btn--outlined">Όλα τα προϊόντα</a>
+		<a href="/home#products" class="btn btn--outlined">See all products</a>
 
 	</div>
 </section>
@@ -190,18 +190,18 @@
 	<div class="container">
 		<div class="row">
 			<div class="column one-fourth">
-				<a href="/"><img src="assets/img/logo_bw.svg" class="logo"></a>
+				<a href="/home"><img src="assets/img/logo_bw.svg" class="logo"></a>
 			</div>
 			<div class="column one-fourth">
 				<ul>
-					<li><a href="/#products">Προϊόντα</a></li>
-					<li><a href="recipes">Συνταγές</a></li>
+					<li><a href="/home#products">Products</a></li>
+					<li><a href="recipes-en">Recipes</a></li>
 				</ul>
 			</div>
 			<div class="column one-fourth">
 				<ul>
-					<li><a href="about">Σχετκά με εμάς</a></li>
-					<li><a href="contact">Επικοινωνία</a></li>
+					<li><a href="about-en">About us</a></li>
+					<li><a href="contact-en">Contact</a></li>
 				</ul>
 			</div>
 			<div class="column one-fourth">

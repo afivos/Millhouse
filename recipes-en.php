@@ -1,6 +1,6 @@
 <?php
 
-  include('assets/php/head.php');
+  include('assets/php/head-en.php');
 
   $sql="SELECT * FROM recipe ORDER BY recipeID DESC"; 
 
@@ -10,7 +10,7 @@
 	<div class="container">
 
 		<div class="navbar">
-		    <a href="/"><img class="logo" src="assets/img/logo-recipes.svg"></a>
+		    <a href="/home"><img class="logo" src="assets/img/logo-recipes-english.svg"></a>
 		    <div class="navIcon visible-sm">
 		        <div class="naviconUpper"></div>
 		        <div class="innerNavicon"></div>
@@ -18,21 +18,21 @@
 		    </div>
 		    <nav>
 		        <ul>
-		            <li><a href="/#products">Προϊόντα</a></li>
-		            <li><a href="recipes">Συνταγές</a></li>
-		            <li><a href="about">Σχετικά με εμάς</a></li>
-		            <li><a href="contact">Επικοινωνία</a></li>
-		            <li><a href="en/"><img src="assets/img/united-kingdom.svg" class="flag"></a></li>
+		            <li><a href="/home#products">Products</a></li>
+		            <li><a href="recipes-en">Recipes</a></li>
+		            <li><a href="about-en">About us</a></li>
+		            <li><a href="contact-en">Contact</a></li>
+		            <li><a href="/"><img src="assets/img/greece.svg" class="flag"></a></li>
 		        </ul>
 		    </nav>
 		</div>
 		
-        <h1>Οι συνταγές μας</h1>
-        <p class="description">Ανακαλύψτε τη δύναμη των δημητριακών Millhouse μέσα από πεντανόστιμες, απολαυστικές και υγιεινές συνταγές δημιουργημένες αποκλειστικά από τους chef μας. Φτιάξτε αλμυρά πιάτα, γλυκές λιχουδιές και ροφήματα για όλες τις ώρες.</p>
+        <h1>Our recipes</h1>
+        <p class="description">Discover the unique power of Millhouse cereals through our delicious, enjoyable and healthy recipes, created exclusively from our chefs. Make salty dishes, sweet delicacies and smoothies, suitable for every hour of the day.</p>
 
-		<a href="#recipes" class="btn btn-sm btn--outlined">Γλυκές συνταγές</a>
-		<a href="#drinks" class="btn btn-sm btn--outlined">Ροφήματα</a>
-		<a href="#desserts" class="btn btn-sm btn--outlined">Αλμυρές Συνταγές</a>
+		<a href="#recipes" class="btn btn-sm btn--outlined">Desserts</a>
+		<a href="#drinks" class="btn btn-sm btn--outlined">Smoothies</a>
+		<a href="#desserts" class="btn btn-sm btn--outlined">Savouries</a>
 	    <div id="arrow-down">
 	      <a href="#recipes" class="button-down"></a>
 	    </div>
@@ -42,7 +42,7 @@
 <section class="section--recipes section--white" id="recipes">
 	<div class="container">
 		<img src="assets/img/mixer.svg" class="icon">
-		<h1>Γλυκές συνταγές</h1>
+		<h1>Desserts</h1>
 		<img src="assets/img/vanilla.png" class="icon--fixed icon--fixed__right">
 		<div class="row grid--recipes">
 
@@ -57,7 +57,7 @@
 
 			<div class="column half">
 				<div class="tiles">
-					<a href="recipe?recipeID=<?php echo $line['recipeID'];?>" class="tile">
+					<a href="recipe-en?recipeID=<?php echo $line['recipeID'];?>" class="tile">
 						<img src="assets/img/<?php echo $line['image'];?>">
 						<div class="details">
 							<h2><?php echo $line['name'];?></h2>
@@ -83,7 +83,7 @@
 	<img src="assets/img/berries.png" class="icon--fixed icon--fixed__left">
 	<div class="container">
 		<img src="assets/img/blender.svg" class="icon">
-		<h1>Ροφήματα</h1>
+		<h1>Smoothies</h1>
 		<div class="row grid--recipes">
 
 		<!--  result fetch from product category "smoothie"-->
@@ -97,7 +97,7 @@
 
 			<div class="column half">
 				<div class="tiles">
-					<a href="recipe?recipeID=<?php echo $line['recipeID'];?>" class="tile">
+					<a href="recipe-en?recipeID=<?php echo $line['recipeID'];?>" class="tile">
 						<img src="assets/img/<?php echo $line['image'];?>">
 						<div class="details">
 							<h2><?php echo $line['name'];?></h2>
@@ -122,7 +122,7 @@
 <section class="section--recipes section--white" id="desserts">
 	<div class="container">
 		<img src="assets/img/salt-pepper.svg" class="icon">
-		<h1>Αλμυρές συνταγές</h1>
+		<h1>Savouries</h1>
 		<img src="assets/img/thyme.png" class="icon--fixed icon--fixed__left">
 		<div class="row grid--recipes">
 
@@ -137,7 +137,7 @@
 
 			<div class="column half">
 				<div class="tiles">
-					<a href="recipe?recipeID=<?php echo $line['recipeID'];?>" class="tile">
+					<a href="recipe-en?recipeID=<?php echo $line['recipeID'];?>" class="tile">
 						<img src="assets/img/<?php echo $line['image'];?>">
 						<div class="details">
 							<h2><?php echo $line['name'];?></h2>
@@ -164,18 +164,18 @@
 	<div class="container">
 		<div class="row">
 			<div class="column one-fourth">
-				<a href="/"><img src="assets/img/logo_bw.svg" class="logo"></a>
+				<a href="/home"><img src="assets/img/logo_bw.svg" class="logo"></a>
 			</div>
 			<div class="column one-fourth">
 				<ul>
-					<li><a href="/#products">Προϊόντα</a></li>
-					<li><a href="recipes">Συνταγές</a></li>
+					<li><a href="/home#products">Products</a></li>
+					<li><a href="recipes-en">Recipes</a></li>
 				</ul>
 			</div>
 			<div class="column one-fourth">
 				<ul>
-					<li><a href="about">Σχετκά με εμάς</a></li>
-					<li><a href="contact">Επικοινωνία</a></li>
+					<li><a href="about-en">About us</a></li>
+					<li><a href="contact-en">Contact</a></li>
 				</ul>
 			</div>
 			<div class="column one-fourth">

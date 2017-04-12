@@ -1,15 +1,15 @@
 <?php
 
-  include('assets/php/head.php');
+  include('assets/php/head-en.php');
   $sql="SELECT * FROM product"; 
 
 ?>
 
-<div class="section__page section__page--index" data-parallax="scroll" data-image-src="../assets/img/woman.jpg" data-speed="0.5">
+<div class="section__page section__page--index" data-parallax="scroll" data-image-src="assets/img/woman.jpg" data-speed="0.5">
 	<div class="container">
 
 		<div class="navbar">
-		    <a href="/en"><img class="logo" src="../assets/img/logo.svg"></a>
+		    <a href="/home"><img class="logo" src="assets/img/logo.svg"></a>
 		    <div class="navIcon visible-sm">
 		        <div class="naviconUpper"></div>
 		        <div class="innerNavicon"></div>
@@ -17,17 +17,17 @@
 		    </div>
 		    <nav>
 		        <ul>
-		            <li><a href="/en/#products">Products</a></li>
-		            <li><a href="recipes">Recipes</a></li>
-		            <li><a href="about.html">About us</a></li>
-		            <li><a href="contact.html">Contact</a></li>
-		            <li><a href="../"><img src="../assets/img/greece.svg" class="flag"></a></li>
+		            <li><a href="/home#products">Products</a></li>
+		            <li><a href="recipes-en">Recipes</a></li>
+		            <li><a href="about-en">About us</a></li>
+		            <li><a href="contact-en">Contact</a></li>
+		            <li><a href="/"><img src="assets/img/greece.svg" class="flag"></a></li>
 		        </ul>
 		    </nav>
 		</div>
 
         <h1>Authenticity and Quality. <br>
-        For two decades, the biggest Greek cereal brand, at the side of every family with respect to a healthy nutrition.</h1>
+        For two decades, the biggest Greek cereal brand stands alongside every family that cares for local goods and prioritises a healthy nutrition.</h1>
         <a href="#products" class="btn btn--filled">See our products</a>
 	</div>
 </div>
@@ -48,7 +48,7 @@
 								?>
 
 			<div class="column one-third">
-				<a href="product?prID=<?php echo $line['prID'];?>"><img src="../assets/img/<?php echo $line['image'];?>" class="img--box__short"><p><?php echo $line['name'];?></p></a>
+				<a href="product-en?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image'];?>" class="img--box__short"><p><?php echo $line['name'];?></p></a>
 			</div>
 
 			<?php
@@ -78,7 +78,7 @@
 								?>
 
 			<div class="column one-third">
-				<a href="product?prID=<?php echo $line['prID'];?>"><img src="../assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
+				<a href="product-en?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
 			</div>
 
 			<?php
@@ -92,7 +92,7 @@
 	</div>
 </section>
 
-<section class="section--products section--photo" data-parallax="scroll" data-image-src="../assets/img/light-diet.jpg" data-speed="0.5">
+<section class="section--products section--photo" data-parallax="scroll" data-image-src="assets/img/light-diet.jpg" data-speed="0.5">
 	<div class="container">
 		<h1>Light &amp; Diet</h1>
 		<p class="description">The Light &amp; Diet products have whole grain flakes as a base, special for the formation of a nice silhouette.</p>
@@ -108,7 +108,7 @@
 								?>
 
 			<div class="column one-third">
-				<a href="product?prID=<?php echo $line['prID'];?>"><img src="../assets/img/<?php echo $line['image']?>" class="img--box__tall"><p><?php echo $line['name']?></p></a>
+				<a href="product-en?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--box__tall"><p><?php echo $line['name']?></p></a>
 			</div>
 
 			<?php
@@ -137,7 +137,7 @@
 							if ($line['category'] == "family") {
 								?>
 			<div class="column one-third">
-				<a href="product?prID=<?php echo $line['prID'];?>"><img src="../assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
+				<a href="product-en?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
 			</div>
 
 			<?php
@@ -151,9 +151,9 @@
 	</div>
 </section>
 
-<section class="section--products section--photo" data-parallax="scroll" data-image-src="../assets/img/boy.jpg" data-speed="0.5">
+<section class="section--products section--photo" data-parallax="scroll" data-image-src="assets/img/boy.jpg" data-speed="0.5">
 	<div class="container">
-		<h1>Kids products</h1>
+		<h1>Kids Products</h1>
 		<p class="description">Nutricious products, especially beneficial for children, as they offer plenty vitamins for an appropriate and stable nutrition.</p>
 		<div class="row">
 
@@ -166,7 +166,7 @@
 							if ($line['category'] == "kids") {
 								?>
 			<div class="column one-third">
-				<a href="product?prID=<?php echo $line['prID'];?>"><img src="../assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
+				<a href="product-en?prID=<?php echo $line['prID'];?>"><img src="assets/img/<?php echo $line['image']?>" class="img--bag"><p><?php echo $line['name']?></p></a>
 			</div>
 
 			<?php
@@ -184,24 +184,24 @@
 	<div class="container">
 		<div class="row">
 			<div class="column one-fourth">
-				<a href="/"><img src="../assets/img/logo_bw.svg" class="logo"></a>
+				<a href="/home"><img src="assets/img/logo_bw.svg" class="logo"></a>
 			</div>
 			<div class="column one-fourth">
 				<ul>
-					<li><a href="/en/index.php#products">Products</a></li>
-					<li><a href="recipes.php">Recipes</a></li>
+					<li><a href="/home#products">Products</a></li>
+					<li><a href="recipes-en">Recipes</a></li>
 				</ul>
 			</div>
 			<div class="column one-fourth">
 				<ul>
-					<li><a href="about.html">About us</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="about-en">About us</a></li>
+					<li><a href="contact-en">Contact</a></li>
 				</ul>
 			</div>
 			<div class="column one-fourth">
 				<ul class="social-icons">
-					<li><a href="http://facebook.com/millhouse.cereals" target="_blank"><img src="../assets/img/facebook.svg"></a></li>
-					<li><a href="http://instagram.com/millhousecereals" target="_blank"><img src="../assets/img/instagram.svg"></a></li>
+					<li><a href="http://facebook.com/millhouse.cereals" target="_blank"><img src="assets/img/facebook.svg"></a></li>
+					<li><a href="http://instagram.com/millhousecereals" target="_blank"><img src="assets/img/instagram.svg"></a></li>
 				</ul>
 			</div>
 		</div>
@@ -214,8 +214,8 @@
 	</div>
 </footer>
 
-<script src="../assets/js/classie.js"></script>
-<script src="../assets/js/demo1.js"></script>
+<script src="assets/js/classie.js"></script>
+<script src="assets/js/demo1.js"></script>
 
 <script>
 $(".navIcon").click(function() {

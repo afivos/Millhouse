@@ -1,6 +1,6 @@
 <?php
 
-  include('connection.php');
+  include('connection-en.php');
 
 ?>
 
@@ -12,18 +12,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Millouse Cereals - The Greek cereal brand</title>
-    <meta name="description" content="">
+    <title>Millouse Cereals | The Greek cereal brand</title>
+    <meta name="description" content="Millhouse is one of the registered brands of the Greek food company INTROFEX Ltd.">
 
     <!-- Fonts, then styles -->
-    <link rel="stylesheet" href="../assets/fonts/Graublau.css">
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="assets/fonts/Graublau.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- jQuery first, then all JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="../assets/js/min/scripts-min.js"></script>
-    <script src="../assets/js/modernizr.custom.js"></script>
-    <script src="../assets/js/min/parallax.min.js"></script>
+    <script src="assets/js/min/scripts-min.js"></script>
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/min/parallax.min.js"></script>
 
     <script>
         $(function(){
