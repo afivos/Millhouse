@@ -69,7 +69,7 @@
 			<div class="column two-fifths">
 				<h2>Ingredients</h2>
 				<ul>
-					<li><a href="product-en?prID=<?php echo $line['prID'];?>"><strong><?php echo $line['productGrams'];?> gr <?php echo $line['product'];?> Millhouse</strong></a></li>
+					<li><a href="product-en?prID=<?php echo $line['prID'];?>"><strong><?php echo $line['productGrams'];?> g <?php echo $line['product'];?> Millhouse</strong></a></li>
 					<br>
 					<!-- Fetching ingredients -->
 					<?php echo $line['ingredients'];?>

@@ -12,7 +12,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Millouse Cereals | The Greek cereal brand</title>
+    <meta property="og:image" content="http://www.millhouse.gr/assets/img/millhouse-logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="490">
+    <meta property="og:image:height" content="216">
+
+    <title>Millhouse Cereals | The Greek cereal brand</title>
     <meta name="description" content="Millhouse is one of the registered brands of the Greek food company INTROFEX Ltd.">
 
     <!-- Fonts, then styles -->

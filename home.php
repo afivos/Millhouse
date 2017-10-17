@@ -5,7 +5,7 @@
 
 ?>
 
-<div class="section__page section__page--index" data-parallax="scroll" data-image-src="assets/img/woman.jpg" data-speed="0.5">
+<div class="section__page section__page--index" data-parallax="scroll" data-image-src="assets/img/family.jpg" data-speed="0.5">
 	<div class="container">
 
 		<div class="navbar">
@@ -26,8 +26,7 @@
 		    </nav>
 		</div>
 
-        <h1>Authenticity and Quality. <br>
-        For two decades, the biggest Greek cereal brand stands alongside every family that cares for local goods and prioritises a healthy nutrition.</h1>
+        <h1>To inspire a better and healthier everyday nutrition for every family or individual.</h1>
         <a href="#products" class="btn btn--filled">See our products</a>
 	</div>
 </div>
